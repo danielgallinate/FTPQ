@@ -1,0 +1,17 @@
+# Mono dark chrome — texto y bordes blancos sobre scrim oscuro
+# Merge con tokens-mono.base.yaml
+
+extends: tokens-mono.base.yaml
+
+chrome:
+  fg: "#FFFFFF"
+  bg: transparent
+  scrim: "#000000"
+  scrim_opacity: 0.48
+
+wallpaper:
+  fallback_solid: "#0d0d0d"
+
+states:
+  error_fg: "#FFFFFF"
+  error_border_style: solid

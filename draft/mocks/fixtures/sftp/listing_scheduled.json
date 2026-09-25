@@ -1,0 +1,8 @@
+{
+  "path": "config/example_config/scheduled",
+  "entries": [
+    {"name": "..", "type": "dir", "size": 0},
+    {"name": "example_extract_20260701.csv", "type": "file", "size": 1048576},
+    {"name": "example_extract_20260702.csv", "type": "file", "size": 2097152}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "path": "config/example_config/requested",
+  "entries": [
+    {"name": "..", "type": "dir", "size": 0},
+    {"name": "example_on_demand_20260703.csv", "type": "file", "size": 524288}
+  ]
+}

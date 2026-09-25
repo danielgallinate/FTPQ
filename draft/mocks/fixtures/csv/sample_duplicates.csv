@@ -1,0 +1,4 @@
+id	name	updated_at
+1	Dup Row	2026-07-01T10:00:00Z
+2	Dup Row	2026-07-01T10:00:00Z
+3	Unique	2026-07-02T11:00:00Z

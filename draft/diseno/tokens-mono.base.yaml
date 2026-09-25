@@ -1,0 +1,54 @@
+# PDE Desktop — tokens base (mono fase 1)
+# ThemeEngine merge: base + mono-dark | mono-light
+
+meta:
+  version: "0.1"
+  phase: mono
+
+spacing:
+  xs: 4
+  sm: 8
+  md: 16
+  lg: 24
+  xl: 32
+
+border:
+  width: 2
+  width_focus: 3
+  width_error: 3
+  style: solid
+
+radius:
+  # fase 1: esquinas rectas (0) — estética outline técnica
+  panel: 0
+  button: 0
+  input: 0
+
+font:
+  family_ui: "Inter, Segoe UI, system-ui, sans-serif"
+  family_mono: "JetBrains Mono, Consolas, monospace"
+  size_sm: 12
+  size_md: 14
+  size_lg: 16
+  weight_label: 500
+  weight_body: 400
+
+chrome:
+  # override en mono-dark.yaml / mono-light.yaml
+  fg: null
+  bg: transparent
+  scrim: null
+  scrim_opacity: 0.48
+
+wallpaper:
+  fit: cover
+  fallback_solid: "#1a1a1a"
+  blur_px: 0
+
+a11y:
+  min_contrast_ratio: 4.5
+  high_contrast_scrim_boost: 0.22
+
+states:
+  hover_invert: true
+  focus_dash: false

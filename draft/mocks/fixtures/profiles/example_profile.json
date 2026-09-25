@@ -1,0 +1,24 @@
+{
+  "profile_id": "example_config",
+  "sftp": {
+    "host": "s-example.server.transfer.us-west-2.amazonaws.com",
+    "port": 22,
+    "user": "example_user",
+    "private_key_path": "~/.ssh/example_key_rsa",
+    "ssh_keys_dir": "~/.ssh",
+    "default_remote_path": "config/example_config/scheduled",
+    "download_dir": "./downloads"
+  },
+  "pandas_rules": {
+    "delimiter": "\t",
+    "required_columns": ["id", "name", "updated_at"],
+    "optional_columns": ["notes"],
+    "metadata": {
+      "clinic_name": "Example Clinic",
+      "datasource": "example_ds"
+    },
+    "preview_max_bytes": 524288,
+    "preview_max_lines": 500,
+    "warn_file_size_mb": 50
+  }
+}

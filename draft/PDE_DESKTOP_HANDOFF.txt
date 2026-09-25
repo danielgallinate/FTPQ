@@ -1,0 +1,290 @@
+================================================================================
+ PDE DESKTOP — HANDOFF DE ALCANCE Y HERRAMIENTAS
+ Para nuevo proyecto: contextos duros, rules, agentes, mocks
+ Alcance acordado: SIN Postgres, SIN Snowflake (por ahora)
+ Fecha: 2026-07-14
+================================================================================
+
+1. RESUMEN DEL PRODUCTO
+--------------------------------------------------------------------------------
+Aplicacion de escritorio portable (Windows nativo + macOS), ejecutable, con
+interfaz GRAFICA (no terminal/TUI). Objetivo: conectar a SFTP, gestionar llaves
+SSH, explorar archivos remotos, previsualizar y descargar, y analizar contenido
+CSV con pandas usando reglas definidas localmente (perfiles JSON).
+
+NO es una copia del PDE SFTP Validator completo. No consulta base de datos ni
+Snowflake en esta fase. La validacion "oficial" contra logs de extract_history
+queda FUERA de alcance hasta una fase futura.
+
+
+2. FUNCIONALIDADES PEDIDAS / ENTENDIDAS
+--------------------------------------------------------------------------------
+
+2.1 SFTP — NUCLEO OBLIGATORIO
+  [F01] Conector SFTP (autenticacion por llave privada SSH)
+  [F02] Configurar servidor: host, puerto, usuario
+  [F03] Elegir que llave privada usar para la conexion (selector en UI)
+  [F04] Configurar ubicacion/carpeta donde buscar llaves (default ~/.ssh;
+        en Windows tambien C:\Users\<user>\.ssh)
+  [F05] Probar conexion SFTP (test auth) antes o durante el uso
+  [F06] Mostrar contenido del SFTP en pantalla: carpetas y archivos del
+        directorio remoto actual (explorador grafico)
+  [F07] Navegar carpetas (entrar, subir, refrescar)
+  [F08] Abrir / previsualizar archivo en pantalla (texto y CSV; ver limites
+        en seccion 4)
+  [F09] Descargar archivo y elegir carpeta de destino local (file picker OS)
+  [F10] Generar nueva pareja de llaves SSH (RSA y/o ECDSA) en ruta elegida
+
+2.2 PANDAS — ANALISIS DE ARCHIVOS (SIN BASE DE DATOS)
+  [F11] Analizar un archivo CSV seleccionado (desde SFTP descargado a temp,
+        o archivo local ya descargado)
+  [F12] Estadisticas basicas: filas, columnas, tipos, valores nulos
+  [F13] Duplicados y valores unicos (por columna o por combinacion de columnas)
+  [F14] Deteccion de columnas candidatas a "clave" (cardinalidad, unicidad)
+  [F15] Validar contenido del archivo contra reglas de un PERFIL LOCAL (JSON):
+        - delimitador esperado (tab, comma, pipe, etc.)
+        - columnas requeridas / opcionales
+        - metadatos de negocio definidos en perfil (ej. nombre clinica,
+          datasource, config name) comparados contra columnas o valores del CSV
+        NOTA: estas reglas NO vienen de Postgres; el usuario o QA las define
+        en el perfil JSON del proyecto
+  [F16] Validar todos los archivos de una carpeta remota o local (cola
+        secuencial; un archivo a la vez; resultados en tabla/lista en UI)
+
+2.3 CONFIGURACION Y PERFILES
+  [F17] Guardar y cargar perfiles de conexion (SFTP host, user, port, key,
+        ssh_keys_dir, download_dir por defecto)
+  [F18] Guardar reglas pandas por perfil (JSON: delimitador, columnas, reglas)
+  [F19] Multiples perfiles posibles (ej. Daniel_test_config10, otro entorno)
+
+2.4 EMPAQUETADO Y PLATAFORMA
+  [F20] Ejecutable portable: funciona en Windows (PowerShell nativo, sin WSL)
+        y macOS sin instalar Python manualmente
+  [F21] Scripts equivalentes: setup.sh / run.sh (Mac/Linux) y setup.ps1 /
+        run.ps1 (Windows)
+  [F22] Regla de paridad multiplataforma en .cursor/rules (cambios probados
+        en ambos entornos)
+
+
+3. EXPLICITAMENTE FUERA DE ALCANCE (ESTA FASE)
+--------------------------------------------------------------------------------
+  - Conector PostgreSQL / RDS
+  - Conector Snowflake
+  - Validar archivo vs registro en extract_history (log en BD)
+  - Validar todos los archivos vs logs en base de datos
+  - Sincronizar CONFIG_ID, sftp_credentials, connection_verified desde BD
+  - Pantalla F4 estilo PDE Validator con lookup en Postgres
+  - TUI / Textual como interfaz principal
+  - WSL, Cygwin, Git Bash como requisito en Windows
+
+  FASE FUTURA (no bloquea este proyecto; puede anadirse despues):
+  - Postgres para logs y config PDE
+  - Snowflake para comparar data vs consulta fuente
+
+
+4. RESTRICCIONES Y LIMITES FUNCIONALES ACORDADOS
+--------------------------------------------------------------------------------
+  - Preview en pantalla: solo texto y CSV; limite de tamano en RAM
+    (recomendado: primeros 512 KB o 500 lineas; configurable en perfil)
+  - Archivos binarios (PDF, zip, etc.): solo descargar; no preview inline
+  - Analisis pandas: limite de MB por archivo (recomendado aviso si > 50 MB)
+  - Validacion en lote: secuencial; no cargar todos los CSV en memoria
+  - Archivos temporales en disco (downloads/, tmp/analysis/); limpiar por sesion
+  - Test SFTP siempre real contra AWS Transfer; no confiar en flags "verified"
+    de sistemas externos (leccion aprendida en config3 vs config10)
+  - Rutas siempre con pathlib.Path / expanduser; sin concatenar con "/"
+  - Reinicio de app en Windows: subprocess, no os.execv a secas
+  - VPN corporativa requerida para SFTP en entornos PDE
+
+
+5. ARQUITECTURA DE PROCESO Y MEMORIA (OBJETIVO)
+--------------------------------------------------------------------------------
+  - Un proceso principal (app de escritorio)
+  - UI en hilo principal; operaciones de red (SFTP) y pandas en worker threads
+  - Una sesion SFTP activa; cerrar al cambiar perfil o llave
+  - pandas: import lazy (solo al abrir pestana Analisis) para ahorrar RAM al inicio
+  - RAM estimada:
+      Solo SFTP activo     ~ 130-200 MB
+      SFTP + pandas        ~ 180-350 MB (depende tamano CSV)
+  - Ejecutable empaquetado estimado:
+      SFTP + UI + pandas   ~ 120-200 MB (one-folder)
+
+
+6. HERRAMIENTAS NECESARIAS (MINIMO)
+--------------------------------------------------------------------------------
+  Lenguaje / runtime
+    - Python 3.11 o superior
+
+  Dependencias Python (requirements.txt minimo)
+    - paramiko>=3.4.0          # SFTP / SSH / llaves
+    - pandas>=2.0.0            # analisis CSV
+    - python-dotenv>=1.0.0     # opcional; perfiles pueden ser solo JSON
+
+  UI (elegir UNA para el proyecto — ver alternativas seccion 7)
+    - flet>=0.24.0             # RECOMENDADA para prototipo rapido
+    O
+    - PySide6>=6.6.0           # alternativa app escritorio clasica
+
+  Desarrollo
+    - pytest>=8.0.0
+    - pytest en venv local (.venv)
+
+  Empaquetado ejecutable
+    - pyinstaller>=6.0         # RECOMENDADO (predecible con paramiko+pandas)
+    O
+    - flet build               # si UI = Flet
+
+  Scripts plataforma (obligatorio paridad)
+    - setup.sh, run.sh         # macOS / Linux
+    - setup.ps1, run.ps1       # Windows PowerShell nativo
+
+  Cursor / agentes
+    - .cursor/rules/cross-platform.mdc   # paridad .sh / .ps1
+    - .cursor/rules/architecture.mdc     # core sin dependencia de UI
+    - docs/spec-*.md                      # alcance cerrado por fase
+
+
+7. HERRAMIENTAS RECOMENDABLES (NO OBLIGATORIAS)
+--------------------------------------------------------------------------------
+  - ruff o flake8                 # lint Python
+  - mypy                          # tipos en core/
+  - pre-commit                    # hooks antes de commit
+  - Git + repo nuevo separado     # no mezclar con file validator PDE
+  - jsonschema                    # validar perfiles JSON de reglas pandas
+  - platformdirs                  # rutas de config por usuario (Win/Mac)
+  - cryptography                  # solo si luego se cifran perfiles con secretos
+
+  Mocks / fixtures para agentes
+    - carpeta mocks/fixtures/
+    - fixtures/sftp/listing_*.json     # listados grabados de SFTP real
+    - fixtures/csv/sample_*.csv        # CSV de prueba
+    - fixtures/profiles/example.json   # perfil SFTP + reglas pandas
+    - MockSftpBrowser implementando contrato ISftpBrowser
+
+
+8. ALTERNATIVAS (NOTA — NO DECIDIR AUN EN ESTE DOCUMENTO)
+--------------------------------------------------------------------------------
+
+  UI
+    | Opcion        | Pros                          | Contras                    |
+    |---------------|-------------------------------|----------------------------|
+    | Flet          | Rapido, Python puro, portable | Tablas muy grandes mas flojas|
+    | PySide6       | App desktop madura, tablas    | Mas boilerplate UI         |
+    | Tauri+web UI  | Binario pequeno               | Dos stacks; SFTP en sidecar|
+    | Electron      | Ecosistema enorme             | Muy pesado (~150MB+)       |
+
+  Empaquetado
+    | Opcion        | Pros                          | Contras                    |
+    |---------------|-------------------------------|----------------------------|
+    | PyInstaller   | Funciona bien con paramiko    | Antivirus a veces alerta   |
+    | flet build    | Integrado si UI=Flet          | Menos control fino         |
+    | briefcase     | Estilo app store              | Windows mas complejo       |
+
+  Config / perfiles
+    | Opcion        | Pros                          | Contras                    |
+    |---------------|-------------------------------|----------------------------|
+    | JSON files    | Simple, versionable, mocks    | Sin UI de edicion avanzada |
+    | .env + JSON   | Compatible con habitos PDE    | Dos fuentes de verdad      |
+    | Solo .env     | Familiar para QA              | Menos estructura reglas    |
+
+  Analisis CSV
+    | Opcion        | Pros                          | Contras                    |
+    |---------------|-------------------------------|----------------------------|
+    | pandas        | Ya usado en validator PDE     | RAM en archivos grandes    |
+    | polars        | Mas rapido, menos RAM         | Cambio de stack            |
+    | pyarrow       | Streaming parcial             | Mas bajo nivel             |
+
+
+9. CONTRATOS (INTERFACES) PARA CONTEXTOS DUROS / AGENTES
+--------------------------------------------------------------------------------
+  Separar SIEMPRE core (sin UI) de adapters y ui:
+
+  ISftpBrowser
+    - connect(profile) / disconnect()
+    - test_auth() -> ok | error
+    - list_dir(path) -> entries[]
+    - download(remote, local_path)
+    - preview(remote, max_bytes) -> text
+
+  IKeyStore
+    - discover(keys_dir) -> paths[]
+    - generate(path, key_type, bits?) -> public_path, fingerprint
+    - fingerprint(public_or_private_path) -> str
+
+  IProfileStore
+    - load(profile_id) / save(profile)
+    - list_profiles()
+
+  IFileAnalyzer  (pandas)
+    - analyze(csv_path, rules) -> AnalysisReport
+    - analyze_batch(paths[], rules) -> BatchReport
+
+  Implementaciones:
+    - Real*     -> produccion (paramiko, pandas)
+    - Mock*     -> tests y demos sin VPN
+    - Fixture*  -> JSON/CSV grabados
+
+
+10. ESTRUCTURA DE REPO SUGERIDA (NUEVO PROYECTO)
+--------------------------------------------------------------------------------
+  pde-desktop/
+    .cursor/rules/
+      cross-platform.mdc
+      architecture.mdc
+      scope-no-db.mdc          # prohibe psycopg2/snowflake en esta fase
+    docs/
+      PDE_DESKTOP_HANDOFF.txt  # este archivo o copia
+      spec-v0-sftp.md
+      spec-v1-pandas.md
+    core/                      # sin import de flet/PySide
+    adapters/                  # paramiko_sftp, pandas_analyzer
+    ui/                        # flet_app o pyside_app
+    mocks/fixtures/
+    tests/
+    setup.sh / run.sh
+    setup.ps1 / run.ps1
+    requirements.txt
+    requirements-dev.txt
+
+
+11. FASES DE ENTREGA
+--------------------------------------------------------------------------------
+  Fase 0 — SFTP grafico ejecutable
+    F01-F10, F17-F21, perfiles JSON basicos, test conexion, portable zip
+
+  Fase 1 — pandas un archivo
+    F11-F15, reporte en UI, reglas JSON, lazy import pandas
+
+  Fase 2 — pandas lote + ejecutable final
+    F16, cola secuencial, empaquetado .app / .exe para QA WorkSpace
+
+  Fase futura (fuera de este handoff)
+    Postgres, Snowflake, validacion vs logs PDE
+
+
+12. LECCIONES DEL PROYECTO ANTERIOR (CONTEXTO PARA RULES)
+--------------------------------------------------------------------------------
+  - sftp-lite (TUI) no cumple expectativa de app grafica ni selector de llave
+    para conexion; tecla K solo lista/genera llaves, no aplica llave al SFTP
+  - AWS Transfer puede desincronizarse de BD; test SFTP real es obligatorio
+  - config10 con llave de config3 autentico OK cuando Transfer estaba bien
+    provisionado; config3 fallo por servidor, no por llave local
+  - Paridad Windows: .ps1 nativo, sin WSL; subprocess para reinicio en Win
+  - Preview y pandas deben tener limites de tamano documentados en rules
+
+
+13. CRITERIO DE EXITO (PROTOTIPO)
+--------------------------------------------------------------------------------
+  [ ] Conectar a SFTP con llave elegida desde UI (sin editar .env a mano)
+  [ ] Navegar scheduled/requested y ver archivos en pantalla
+  [ ] Preview de un CSV de ejemplo
+  [ ] Descargar a carpeta elegida por usuario
+  [ ] Generar llave nueva en ~/.ssh
+  [ ] Analizar CSV: duplicados, unicos, columnas requeridas segun perfil JSON
+  [ ] Arrancar en Mac (./run.sh) y Windows (.\run.ps1) con misma funcionalidad
+  [ ] Zip o carpeta portable ejecutable sin instalar Python en maquina destino
+
+
+================================================================================
+ FIN DEL HANDOFF — copiar este archivo al nuevo repo como base de rules/context
+================================================================================
