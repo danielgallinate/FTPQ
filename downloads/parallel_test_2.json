@@ -1,0 +1,36 @@
+{
+  "ok": false,
+  "mode": "schema",
+  "file": "/Users/daniel.gallinate/repositorios/FTPQ/emr-qa/fixtures/sample_encounters.csv",
+  "reference": null,
+  "rows_loaded": 2,
+  "rows_total": 2,
+  "display_truncated": false,
+  "cell_ok_pct": 0.0,
+  "rows_without_match": null,
+  "threshold_failures": [],
+  "messages": [
+    "coverage gap columns (4): encounter_id, mrn, status, visit_date",
+    "strict column mismatch (missing: CASE_ID, CLINIC_ID, EXPORT_FLAG, EXTRACT_DATE_TIME_UTC, EXTRACT_FILE_RECORD_ID, ICD_CODE, ICD_ID, ICD_TYPE, IS_PRIMARY, LAST_MODIFIED_DATE_TIME_UTC; extra: encounter_id, mrn, status, visit_date)"
+  ],
+  "schema_report": {
+    "schema_id": "sample_encounters",
+    "schema_name": "ICD CODE EXTRACT COL",
+    "strict": true,
+    "cells_ok": 0,
+    "cells_nok": 0,
+    "cells_unevaluated": 8,
+    "coverage_pct": 0.0,
+    "quality_pct": 0.0,
+    "structural_errors": [
+      "strict column mismatch (missing: CASE_ID, CLINIC_ID, EXPORT_FLAG, EXTRACT_DATE_TIME_UTC, EXTRACT_FILE_RECORD_ID, ICD_CODE, ICD_ID, ICD_TYPE, IS_PRIMARY, LAST_MODIFIED_DATE_TIME_UTC; extra: encounter_id, mrn, status, visit_date)"
+    ],
+    "coverage_columns": [
+      "encounter_id",
+      "mrn",
+      "status",
+      "visit_date"
+    ],
+    "headline": "Errores estructurales (1)"
+  }
+}
