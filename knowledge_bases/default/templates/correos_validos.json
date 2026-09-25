@@ -1,0 +1,171 @@
+{
+  "_meta": {
+    "schema_version": "2.0",
+    "template_id": "correos_validos",
+    "knowledge_base_id": "default",
+    "created_at": "2026-08-04T16:06:31Z",
+    "updated_at": "2026-08-04T16:07:02Z"
+  },
+  "header": {
+    "name": "correos validos",
+    "fields": [
+      {
+        "field_id": "fld_4e2713f4bf80",
+        "label": "Email",
+        "column": "Email",
+        "required": false
+      },
+      {
+        "field_id": "fld_21918fbb6ab7",
+        "label": "Name",
+        "column": "Name",
+        "required": false
+      }
+    ],
+    "keys": [
+      {
+        "key_id": "key_36fcb53036f7",
+        "label": "PK Email",
+        "field_ids": [
+          "fld_4e2713f4bf80"
+        ],
+        "primary": true
+      }
+    ],
+    "evaluation": {
+      "columns": [
+        "Email",
+        "Name"
+      ],
+      "show_only_evaluated": false
+    }
+  },
+  "minibase": {
+    "dedup": {
+      "key_id": "key_36fcb53036f7",
+      "strategy": "composite_key"
+    },
+    "records": [
+      {
+        "record_id": "rec_635b2c9cf4dd",
+        "key_fingerprint": "39da59d1420ad01611e663932dac799222cf8511ec94b6a2d1bd57bebfae724d",
+        "key_id": "key_36fcb53036f7",
+        "saved_at": "2026-08-04T16:06:35Z",
+        "values": {
+          "fld_4e2713f4bf80": "ryan.coughlin@webpt.com",
+          "fld_21918fbb6ab7": "ryan.coughlin"
+        },
+        "source": {
+          "file_name": "User_Leaderboard_2026-02-21_2026-02-27.csv",
+          "file_path": "/Users/daniel.gallinate/Downloads/User_Leaderboard_2026-02-21_2026-02-27.csv",
+          "row_index": 0
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_e6d263fe17d2",
+        "key_fingerprint": "04d006590bc9d75b2877073404333fb01df55c456ce5d50a82176bb0a4f1d9c1",
+        "key_id": "key_36fcb53036f7",
+        "saved_at": "2026-08-04T16:06:36Z",
+        "values": {
+          "fld_4e2713f4bf80": "stephen.wisner@webpt.com",
+          "fld_21918fbb6ab7": "stephen.wisner"
+        },
+        "source": {
+          "file_name": "User_Leaderboard_2026-02-21_2026-02-27.csv",
+          "file_path": "/Users/daniel.gallinate/Downloads/User_Leaderboard_2026-02-21_2026-02-27.csv",
+          "row_index": 1
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_7a3a8e5c8635",
+        "key_fingerprint": "d36f95f694f4af27ed6e674cf6552108291f03424ede19d42d1c8abae3c3794b",
+        "key_id": "key_36fcb53036f7",
+        "saved_at": "2026-08-04T16:06:37Z",
+        "values": {
+          "fld_4e2713f4bf80": "mike.storrie@webpt.com",
+          "fld_21918fbb6ab7": "mike.storrie2"
+        },
+        "source": {
+          "file_name": "User_Leaderboard_2026-02-21_2026-02-27.csv",
+          "file_path": "/Users/daniel.gallinate/Downloads/User_Leaderboard_2026-02-21_2026-02-27.csv",
+          "row_index": 2
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_4cbe517ffbd2",
+        "key_fingerprint": "816696db44faa790d91ae859f0da4afd16125c0d9cbe12082acc0ce7da0ab127",
+        "key_id": "key_36fcb53036f7",
+        "saved_at": "2026-08-04T16:06:38Z",
+        "values": {
+          "fld_4e2713f4bf80": "fei.yang@webpt.com",
+          "fld_21918fbb6ab7": "fei.yang2"
+        },
+        "source": {
+          "file_name": "User_Leaderboard_2026-02-21_2026-02-27.csv",
+          "file_path": "/Users/daniel.gallinate/Downloads/User_Leaderboard_2026-02-21_2026-02-27.csv",
+          "row_index": 3
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_d41be47f9540",
+        "key_fingerprint": "8fa8b7d19e0ed757eb576759194e4817086020a302169d033e9da35d22fd1961",
+        "key_id": "key_36fcb53036f7",
+        "saved_at": "2026-08-04T16:06:39Z",
+        "values": {
+          "fld_4e2713f4bf80": "jasmine.hegman@webpt.com",
+          "fld_21918fbb6ab7": "2"
+        },
+        "source": {
+          "file_name": "User_Leaderboard_2026-02-21_2026-02-27.csv",
+          "file_path": "/Users/daniel.gallinate/Downloads/User_Leaderboard_2026-02-21_2026-02-27.csv",
+          "row_index": 4
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_5e8ab1d9d52a",
+        "key_fingerprint": "a9d27e340b2825b4aad876181e2b8668a00b809054d5082b15a70233b964980f",
+        "key_id": "key_36fcb53036f7",
+        "saved_at": "2026-08-04T16:06:39Z",
+        "values": {
+          "fld_4e2713f4bf80": "bobby.heath@webpt.com",
+          "fld_21918fbb6ab7": "bobby.heath"
+        },
+        "source": {
+          "file_name": "User_Leaderboard_2026-02-21_2026-02-27.csv",
+          "file_path": "/Users/daniel.gallinate/Downloads/User_Leaderboard_2026-02-21_2026-02-27.csv",
+          "row_index": 5
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      }
+    ]
+  }
+}

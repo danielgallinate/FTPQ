@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "name": "reference-sample",
+  "mode": "reference",
+  "knowledge_base_id": "default",
+  "reference": {
+    "duplicate_policy": "first",
+    "pairs": [
+      {
+        "left_column": "mrn",
+        "right_column": "mrn",
+        "enabled": true,
+        "is_join_key": true,
+        "left_transform": {},
+        "right_transform": {}
+      },
+      {
+        "left_column": "status",
+        "right_column": "status",
+        "enabled": true,
+        "is_join_key": false,
+        "left_transform": {},
+        "right_transform": {}
+      }
+    ],
+    "left_catalog_bindings": {}
+  },
+  "qa": {
+    "template_paths": [],
+    "highlight_mode": "fail_any"
+  },
+  "validation": {
+    "template_path": ""
+  },
+  "thresholds": {},
+  "evaluated_columns": [
+    "mrn",
+    "encounter_id",
+    "visit_date",
+    "status"
+  ]
+}

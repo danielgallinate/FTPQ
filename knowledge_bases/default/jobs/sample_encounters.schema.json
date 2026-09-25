@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "schema_id": "sample_encounters",
+  "name": "ICD CODE EXTRACT COL",
+  "strict": true,
+  "created_at": "2026-08-19T19:00:00Z",
+  "updated_at": "2026-08-20T14:20:07Z",
+  "columns": [
+    {
+      "name": "EXTRACT_FILE_RECORD_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "CLINIC_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "CASE_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "IS_PRIMARY",
+      "data_type": "boolean",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "ICD_TYPE",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "ICD_ID",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "ICD_CODE",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "LAST_MODIFIED_DATE_TIME_UTC",
+      "data_type": "datetime",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "EXPORT_FLAG",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "EXTRACT_DATE_TIME_UTC",
+      "data_type": "datetime",
+      "allows_null": false,
+      "enabled": true
+    }
+  ],
+  "batch_match": {
+    "filename_patterns": [
+      "(?i).*ICD_Codes[_-]?\\d{8}_\\d{6}\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$",
+      "(?i).*_PDE_ICD_Codes_.*\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$",
+      "(?i).*PDE ICD Codes_.*\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$",
+      "(?i).*ICD Codes_.*\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$"
+    ]
+  }
+}

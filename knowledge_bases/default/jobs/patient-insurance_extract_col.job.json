@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "name": "PATIENT-INSURANCE EXTRACT COL",
+  "mode": "schema",
+  "knowledge_base_id": "default",
+  "description": "Validación estructural — catálogo patient-insurance_extract_col.",
+  "reference": {
+    "duplicate_policy": "first",
+    "pairs": [],
+    "left_catalog_bindings": {}
+  },
+  "qa": {
+    "template_paths": [],
+    "highlight_mode": "fail_any"
+  },
+  "validation": {
+    "template_path": ""
+  },
+  "schema": {
+    "schema_id": "patient-insurance_extract_col"
+  },
+  "thresholds": {}
+}

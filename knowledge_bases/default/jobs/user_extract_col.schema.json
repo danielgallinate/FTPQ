@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "schema_id": "user_extract_col",
+  "name": "USERS EXTRACT COL",
+  "strict": true,
+  "created_at": "2026-08-20T16:30:47Z",
+  "updated_at": "2026-09-07T19:36:53Z",
+  "columns": [
+    {
+      "name": "EXTRACT_FILE_RECORD_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "USER_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "USER_NAME",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "USER_TYPE",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "USERTYPEDESCRIPTION",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "FULL_NAME",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "EMAIL_ADDRESS",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "USER_STATUS",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "PT_ID",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "PT_CREDENTIAL",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "NPI",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "FIRST_NAME",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "LAST_NAME",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "PREFIX",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "SUFFIX",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "MIDDLENAME",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "CLINIC_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "CLINIC_NAME",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "COMPANY_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "COMPANY_NAME",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "EXPORT_FLAG",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "REVFLOW_PROVIDER_ID",
+      "data_type": "integer",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "ALTERNATE_ID",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "STATE_LICENSE_NUMBER",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "EXTRACT_DATE_TIME_UTC",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "LAST_MODIFIED_DATE_TIME_UTC",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    }
+  ],
+  "batch_match": {
+    "filename_patterns": [
+      "(?i).*User[_-]?\\d{8}_\\d{6}\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$",
+      "(?i).*_PDE_User_.*\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$",
+      "(?i).*PDE User_.*\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$"
+    ]
+  }
+}

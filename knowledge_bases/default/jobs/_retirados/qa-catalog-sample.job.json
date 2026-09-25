@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "name": "qa-catalog-sample",
+  "mode": "qa",
+  "knowledge_base_id": "default",
+  "reference": {
+    "duplicate_policy": "first",
+    "pairs": [],
+    "left_catalog_bindings": {}
+  },
+  "qa": {
+    "template_paths": [],
+    "catalog_ids": [
+      "clinic_qa",
+      "fisicos_qa",
+      "icd_qa"
+    ],
+    "highlight_mode": "fail_any"
+  },
+  "validation": {
+    "template_path": ""
+  },
+  "thresholds": {},
+  "max_rows": 5000,
+  "row_limit": "5000",
+  "evaluated_columns": [
+    "CLINIC_ID",
+    "ICD_10",
+    "SECONDARY_PHYSICIAN_ID"
+  ]
+}

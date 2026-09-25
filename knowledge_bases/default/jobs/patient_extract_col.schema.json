@@ -1,0 +1,361 @@
+{
+  "schema_version": 1,
+  "schema_id": "patient_extract_col",
+  "name": "PATIENT EXTRACT COL",
+  "strict": true,
+  "created_at": "2026-09-07T15:42:09Z",
+  "updated_at": "2026-09-07T19:35:34Z",
+  "columns": [
+    {
+      "name": "EXTRACT_FILE_RECORD_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "COMPANY_ID",
+      "data_type": "integer",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "CLINIC_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "BILLING_PATIENT_ID",
+      "data_type": "integer",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "PATIENT_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "ALTERNATE_ID",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "PATIENT_STATUS",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "FIRST_NAME",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "MIDDLE_NAME",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "LAST_NAME",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "SUFFIX",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "DOB",
+      "data_type": "date",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "ADDRESSBOOK_ID",
+      "data_type": "integer",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "ADDRESS_TYPE",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "PRIMARY_ADDRESS",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "ADDRESS_LINE_1",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "ADDRESS_LINE_2",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "CITY",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "STATE",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "ZIP",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "COUNTRY",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "PHONE_TYPE",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "HOME_PHONE",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "MOBILE_PHONE",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "WORK_PHONE",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "EMAIL_ADDRESS",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "PRIMARY_CONTACT",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "SEX",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "GENDER_IDENTITY",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "SSN",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "LANGUAGE_PREFERENCE",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "IN_COLLECTIONS",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "EMPLOYER_NAME",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "PRIMARYINS",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "POLICYBEGINDATE",
+      "data_type": "date",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "POLICYENDDATE",
+      "data_type": "date",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "SECONDARYINS",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "SECONDARYPOLICYBEGINDATE",
+      "data_type": "date",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "SECONDARYPOLICYENDDATE",
+      "data_type": "date",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "PHYSICIAN_ID",
+      "data_type": "integer",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "THERAPIST_ID",
+      "data_type": "integer",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "GUARANTOR_FIRST_NAME",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "GUARANTOR_LAST_NAME",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "GUARANTOR_MIDDLE_INITIAL",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "GUARANTOR_RELATION_TO_PATIENT",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "GUARANTOR_ADDRESS_LINE_1",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "GUARANTOR_ADDRESS_LINE_2",
+      "data_type": "integer",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "GUARANTOR_CITY",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "GUARANTOR_STATE",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "GUARANTOR_ZIP",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "GUARANTOR_COUNTRY",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "GUARANTOR_PHONE",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "PATIENT_CREATION_DATE",
+      "data_type": "date",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "LAST_MODIFIED_DATE_TIME_UTC",
+      "data_type": "datetime",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "EXPORT_FLAG",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "EXTRACT_DATE_TIME_UTC",
+      "data_type": "datetime",
+      "allows_null": false,
+      "enabled": true
+    }
+  ],
+  "batch_match": {
+    "filename_patterns": [
+      "(?i).*Patient[_-]?\\d{8}_\\d{6}\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$",
+      "(?i).*_PDE_Patient_.*\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$",
+      "(?i).*PDE Patient_.*\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$"
+    ],
+    "filename_excludes": [
+      "(?i).*Patient_Credit[_-]?\\d{8}_\\d{6}\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$",
+      "(?i).*Patient_Insurance[_-]?\\d{8}_\\d{6}\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$",
+      "(?i).*_PDE_Patient_Credit_.*\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$",
+      "(?i).*PDE Patient Credit_.*\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$",
+      "(?i).*_PDE_Patient_Insurance_.*\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$",
+      "(?i).*PDE Patient Insurance_.*\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$"
+    ]
+  }
+}

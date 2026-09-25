@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "schema_id": "appointment_extract_col",
+  "name": "APPOINTMENT EXTRACT COL",
+  "strict": true,
+  "created_at": "2026-08-20T14:35:54Z",
+  "updated_at": "2026-09-08T15:17:09Z",
+  "columns": [
+    {
+      "name": "EXTRACT_FILE_RECORD_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "EXPORT_FLAG",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "APPOINTMENT_ID",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "START_DATE_UTC",
+      "data_type": "datetime",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "END_DATE_UTC",
+      "data_type": "datetime",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "CHECK_IN_TIME_UTC",
+      "data_type": "datetime",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "CHECK_OUT_TIME_UTC",
+      "data_type": "datetime",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "CALENDAR_TITLE",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "CLINIC_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "THERAPIST_ID",
+      "data_type": "integer",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "CALENDAR_OWNER_ID",
+      "data_type": "decimal",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "APPOINTMENT_TYPE",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "CASE_ID",
+      "data_type": "integer",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "PATIENT_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "APPOINTMENT_CREATOR_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "APPOINTMENT_STATUS",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "CANCEL_NOSHOW_REASON",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "CANCEL_NOSHOW_COMMENT",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "LAST_MODIFIED_DATE_TIME_UTC",
+      "data_type": "datetime",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "EXTRACT_DATE_TIME_UTC",
+      "data_type": "datetime",
+      "allows_null": true,
+      "enabled": true
+    }
+  ],
+  "batch_match": {
+    "filename_patterns": [
+      "(?i).*Appointments[_-]?\\d{8}_\\d{6}\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$",
+      "(?i).*_PDE_Appointments_.*\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$",
+      "(?i).*PDE Appointments_.*\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$"
+    ]
+  }
+}

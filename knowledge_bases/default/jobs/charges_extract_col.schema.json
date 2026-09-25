@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "schema_id": "charges_extract_col",
+  "name": "CHARGES EXTRACT COL",
+  "strict": true,
+  "created_at": "2026-09-07T15:09:44Z",
+  "updated_at": "2026-09-08T16:46:54Z",
+  "columns": [
+    {
+      "name": "EXTRACT_FILE_RECORD_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "COMPANY_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "CLINIC_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "EMR_PATIENT_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "GPMS_CODE",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "BILLING_PATIENT_ID",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "CLIENT_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "SOAP_SOURCE",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "CASE_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "VISIT_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "VISIT_DATE",
+      "data_type": "datetime",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "CHARGE_ID",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "CHARGE_AMOUNT",
+      "data_type": "decimal",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "RECORD_POINTER",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "CPT_CODE_ID",
+      "data_type": "integer",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "CPT",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "CPT_PREFIX",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "CPT_SUFFIX",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "UNITS",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "PRIMARY_ICD",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "ICD",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "DIRECT_MINUTES",
+      "data_type": "integer",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "NOTE_TYPE",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "NOTE_FINALIZED_DATE",
+      "data_type": "datetime",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "DISCHARGE_DATE",
+      "data_type": "datetime",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "THERAPIST_ID",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "COSIGN_THERAPIST_ID",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "INSURANCE_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "INSURANCE_TYPE_ID",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "PRIMARYINS",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "SECONDARYINS",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "LAST_MODIFIED_DATE_TIME_UTC",
+      "data_type": "datetime",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "EXPORT_FLAG",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "EXTRACT_DATE_TIME_UTC",
+      "data_type": "datetime",
+      "allows_null": false,
+      "enabled": true
+    }
+  ],
+  "batch_match": {
+    "filename_patterns": [
+      "(?i).*Charges[_-]?\\d{8}_\\d{6}\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$",
+      "(?i).*_PDE_Charges_.*\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$",
+      "(?i).*PDE Charges_.*\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$"
+    ]
+  }
+}

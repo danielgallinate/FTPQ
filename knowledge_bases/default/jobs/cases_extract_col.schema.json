@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "schema_id": "cases_extract_col",
+  "name": "CASES EXTRACT COL",
+  "strict": true,
+  "created_at": "2026-08-20T15:04:49Z",
+  "updated_at": "2026-09-08T20:21:54Z",
+  "columns": [
+    {
+      "name": "EXTRACT_FILE_RECORD_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "EXTRACT_DATE_TIME_UTC",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "EXPORT_FLAG",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "ADDITIONAL_INFO",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "AUTHORIZATION_REQUIRED",
+      "data_type": "integer",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "CASE_ALT_ID",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "CASE_CLOSED_DATE",
+      "data_type": "date",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "CASE_CREATION_DATE",
+      "data_type": "date",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "CASE_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "CASE_NAME",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "CASE_OPEN_DATE",
+      "data_type": "date",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "CASE_STATUS",
+      "data_type": "string",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "CLINIC_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "CONTACT_FIRST_NAME",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "CONTACT_LAST_NAME",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "CONTACT_NAME",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "ICD",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "INSTYPEID",
+      "data_type": "integer",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "MEDICARE",
+      "data_type": "boolean",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "MODIFIED_DATE",
+      "data_type": "date",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "PATIENT_ID",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "PLACE_OF_SERVICE",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "PRIMARYINS",
+      "data_type": "integer",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "PRIMARYINS_VERIFIED_DATE",
+      "data_type": "date",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "PRIMARY_THERAPIST",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "PRIMARY_TREATMENT_CLINIC",
+      "data_type": "integer",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "REFERRAL_DATE",
+      "data_type": "date",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "REFERRING_DOC",
+      "data_type": "integer",
+      "allows_null": false,
+      "enabled": true
+    },
+    {
+      "name": "RELATED_CAUSE",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "REQUESTED_PROVIDER",
+      "data_type": "string",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "RETURN_TO_DR",
+      "data_type": "date",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "SECONDARYINS",
+      "data_type": "integer",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "SECONDARYINS_VERIFIED_DATE",
+      "data_type": "date",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "SECONDARY_PHYSICIAN_ID",
+      "data_type": "integer",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "TERTIARY_PHYSICIAN_ID",
+      "data_type": "integer",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "HL7_DATE",
+      "data_type": "datetime",
+      "allows_null": true,
+      "enabled": true
+    },
+    {
+      "name": "LAST_MODIFIED_DATE_TIME_UTC",
+      "data_type": "datetime",
+      "allows_null": true,
+      "enabled": true
+    }
+  ],
+  "batch_match": {
+    "filename_patterns": [
+      "(?i).*Cases[_-]?\\d{8}_\\d{6}\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$",
+      "(?i).*_PDE_Cases_.*\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$",
+      "(?i).*PDE Cases_.*\\.(?:csv|tsv|psv|xlsx|xlsm|xls)$"
+    ]
+  }
+}

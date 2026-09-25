@@ -1,0 +1,95 @@
+EMR QA — Manual de uso (iteración 2)
+=====================================
+
+Qué es
+------
+EMR QA es una herramienta local para abrir archivos tabulares (CSV, TSV, PSV),
+definir templates de validación y comparar filas contra una minibase de
+referencia. Todo se guarda en su máquina; no hay SFTP ni base de datos remota.
+
+Arranque
+--------
+  ./scripts/run_emr_qa_editor.sh
+
+Requisito: Python 3.12+, macOS nativo o Windows con WSL2.
+
+Pantalla inicial
+----------------
+Al abrir la app verá el navegador local (por defecto en Descargas).
+Doble clic en un archivo tabular muestra el menú:
+  • Abrir   — visualizar datos en el grid (sin validación).
+  • Probar  — grid + panel de validación a la derecha.
+
+Menú superior
+-------------
+Archivo
+  • Cerrar archivo — vuelve al navegador.
+  • Salir
+
+Ver
+  • Fondo… / Icono… — apariencia de la ventana.
+  • Llave — cifrado opcional de la minibase en templates:
+      - Generar llave nueva… (avisa que templates cifrados con la llave
+        anterior no abrirán hasta cargar esa llave de nuevo).
+      - Cargar llave existente…
+      - Exportar llave activa… (haga backup si usa cifrado).
+
+Ayuda
+  • Acerca de EMR QA — descripción y enlace a este manual.
+  • Idioma — Español / English.
+
+Modo Probar — panel derecho (4 tabs)
+------------------------------------
+1. Vista
+   Mismas opciones que el sidebar del grid: columnas visibles, filtros,
+   resaltado. Las columnas no marcadas para evaluación pueden mostrarse en gris.
+
+2. Validation
+   • Crear / Cargar template (JSON v2.0 en knowledge_bases/.../templates/).
+   • Definir llave primaria (simple o compuesta) antes de guardar registros.
+   • Añadir registros desde filas marcadas en el grid o desde el formulario.
+   • Duplicados en minibase se rechazan.
+
+3. Template Edit
+   • Editar la minibase como tabla (añadir/quitar filas, cambiar celdas).
+   • Guardar persiste cambios; si el template está cifrado, se mantiene cifrado.
+   • Cifrar minibase — solo con llave activa y acción explícita (Ver → Llave).
+
+4. QA
+   • Marque uno o más templates para validar el archivo abierto contra varias
+     minibases a la vez.
+   • Métricas OK/NOK, gráficos y reporte en el panel QA.
+
+Barra de progreso y mensajes
+----------------------------
+En Probar, la barra inferior muestra el avance de validación.
+La franja de mensajes concentra alertas: llaves en error, duplicados,
+templates cifrados sin llave, errores de archivo, etc.
+
+Templates (concepto)
+--------------------
+Un template JSON tiene:
+  • header — nombre, columnas, llaves lógicas, reglas.
+  • minibase — registros golden ya validados.
+
+Puede convivir templates en texto plano y cifrados. Los cifrados guardan
+header.encryption.key_id y minibase_sealed; necesitan la llave correcta activa.
+
+Ubicación de datos
+------------------
+  emr-qa/knowledge_bases/<kb_id>/templates/*.json
+  emr-qa/config/template_encryption.key  (no compartir ni commitear)
+
+Flujo típico
+------------
+1. Probar un CSV de encuentros.
+2. Tab Validation: crear template, elegir columnas llave (p. ej. MRN + encounter).
+3. Marcar filas correctas en el grid → añadir a minibase.
+4. (Opcional) Template Edit → Cifrar minibase si hay llave activa.
+5. Tab QA: cruzar el mismo archivo contra otros templates.
+
+Limitaciones
+------------
+• Uso individual local; no distribuir templates con PHI sin política org.
+• El cifrado protege la minibase en disco; nombres de columnas siguen visibles.
+• Sin conexión a EMR en vivo — solo archivos que usted abre localmente.

@@ -1,0 +1,1691 @@
+{
+  "_meta": {
+    "schema_version": "2.0",
+    "template_id": "calendar_title",
+    "knowledge_base_id": "default",
+    "created_at": "2026-08-04T21:53:07Z",
+    "updated_at": "2026-08-04T22:08:12Z"
+  },
+  "header": {
+    "name": "calendar title",
+    "fields": [
+      {
+        "field_id": "fld_802abd68d30f",
+        "label": "CALENDAR_TITLE",
+        "column": "CALENDAR_TITLE",
+        "required": false
+      },
+      {
+        "field_id": "fld_99953c705450",
+        "label": "CALENDAR_OWNER_ID",
+        "column": "CALENDAR_OWNER_ID",
+        "required": false
+      }
+    ],
+    "keys": [
+      {
+        "key_id": "key_18ec25018641",
+        "label": "PK CALENDAR_OWNER_ID",
+        "field_ids": [
+          "fld_99953c705450"
+        ],
+        "primary": true
+      }
+    ],
+    "evaluation": {
+      "columns": [
+        "CALENDAR_TITLE",
+        "CALENDAR_OWNER_ID"
+      ],
+      "show_only_evaluated": false
+    }
+  },
+  "minibase": {
+    "dedup": {
+      "key_id": "key_18ec25018641",
+      "strategy": "composite_key"
+    },
+    "records": [
+      {
+        "record_id": "rec_3e635ad14817",
+        "key_fingerprint": "60160590c841b7cf581d75ca8b9c5b901369fa601440d01ece78a7657947580f",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Kiranindividual",
+          "fld_99953c705450": "502324"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 0
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_800ebc54a311",
+        "key_fingerprint": "7f73de536db31585fc57c5b5dd8669d218ca79a4607a3bfea9446cc5fa38544a",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Vany Loredo",
+          "fld_99953c705450": "476709"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 1
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_5f9e4dac4d6f",
+        "key_fingerprint": "1d9e04f39935cee1459bb797160ae7b1180536033c3ad7d835d22f12b98df233",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Nic PT",
+          "fld_99953c705450": "227484"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 3
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_664e619a35d5",
+        "key_fingerprint": "564f3d98caa1a0058686d9e8cb7112a1876c64cc7494d2dcee63c7b0dcbc2e69",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Irshu Shrestha",
+          "fld_99953c705450": "472751"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 4
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_72a398ce2f35",
+        "key_fingerprint": "4f6042b23f8fa04989c6d6d11ee8eb68bc4b35c212cbc474562c6cde9de5fa62",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Siri.OSPT(2)",
+          "fld_99953c705450": "545912"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 5
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_b6e120c2eb20",
+        "key_fingerprint": "85d36c92e4a6379c6311e3cbe175bd663914b4a40a34e1da6723b47f7795ad6d",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Seb R Test 03",
+          "fld_99953c705450": "452815"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 6
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_5d5f3c348e61",
+        "key_fingerprint": "d732b71ffddb008ea2b3917d72a299cab1294d713bf8dbfba1862f50b4b91321",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Sheetal PandaSLP",
+          "fld_99953c705450": "532469"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 7
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_421d1e4d85d5",
+        "key_fingerprint": "95843079c77e539f4163380e4a017903836a501e947a837dd3a5bfabfabb904b",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Mark Farina",
+          "fld_99953c705450": "103002"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 9
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_373c3b58fd10",
+        "key_fingerprint": "48ea0d83e996b5231ba0a1923536efd3f08acfd1bf6affbe500878380dfb95fc",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "test user kk3",
+          "fld_99953c705450": "585949"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 10
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_08e2fcd18c6c",
+        "key_fingerprint": "c5398be22e7bf4b0915b182c36acd2c27f7e9a7e43e45381f1ed7d5e773cc82e",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Asim Khan",
+          "fld_99953c705450": "531173"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 14
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_be23cbee4c8c",
+        "key_fingerprint": "e93c304903391d2f81b4f71450e5c3196e4993fc88dfb3de3ed2dc59e288849d",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "TherapistOT",
+          "fld_99953c705450": "434374"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 15
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_c78261239006",
+        "key_fingerprint": "9c5ebb704886dae803617f40dca0b292a3fd5a7ec9f5d7147edeb53e347d996c",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Regression Test User",
+          "fld_99953c705450": "218178"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 29
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_0a1e6f807978",
+        "key_fingerprint": "3fc3313976939863515f38e983f7b472b55fb2e3ecd5cb7e6c2765b61175f67f",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Penny Lane",
+          "fld_99953c705450": "105353"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 30
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_17545b0d1a8a",
+        "key_fingerprint": "04bece61b072a5d0487487990c6ef03e394a1e1a5f63409cd97122d12cdc8a82",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "KiranTest",
+          "fld_99953c705450": "493381"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 33
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_ccbc14241700",
+        "key_fingerprint": "4f6510571a6db7f2923d4e00bfebc763b4b1cb71813530c4c67a31621b4379c1",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "admin user",
+          "fld_99953c705450": "481408"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 34
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_59d114bf79b5",
+        "key_fingerprint": "d94813d67e2c46a4394ff7428342d1820cac039008045596105da7b2ccc2c2e9",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Seb Tasking Test 2",
+          "fld_99953c705450": "469715"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 37
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_e96ca3769a82",
+        "key_fingerprint": "f733f46664ba6ef891abbbd0c823e6931876efd9d94e500a64aeefc2570453de",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Ashley JansenPT",
+          "fld_99953c705450": "532059"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 41
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_315fe2eee5b7",
+        "key_fingerprint": "3463fab2f876580eabecc0a11943d55dee356c722ed4cd5f62462b04a4c883da",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Siri's PT",
+          "fld_99953c705450": "532484"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 43
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_7eb9c596b731",
+        "key_fingerprint": "96edab39e5fb87b1c4e0840d84ac17dbd1675d53fd82387ab73299946964a97a",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "komal pt",
+          "fld_99953c705450": "532000"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 45
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_bcb5d10a4415",
+        "key_fingerprint": "93f5a12964f4010853f82f4b9ef374640294ee53a5f195b0363ad00096376542",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Andrea Cabrera",
+          "fld_99953c705450": "485400"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 46
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_27a6dd8a394c",
+        "key_fingerprint": "3656dce69d637d88542447d8b1571be16fe787a6d343e50e39524a53f286bc52",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "jesmitha.testuser",
+          "fld_99953c705450": "528171"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 48
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_9e449d7a0af8",
+        "key_fingerprint": "bbd965f25f5c1832c02d6faf3079ca5a6253e2121e715535b605a2227d3f868d",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Noemi Antezana",
+          "fld_99953c705450": "348027"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 50
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_8879f82365d0",
+        "key_fingerprint": "ce2348fb135a48c9c87c913aca274b39c78d70c742a2e240d2d8aa863aa71ef8",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Kobe Bryant",
+          "fld_99953c705450": "34696"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 52
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_0ec8614b0263",
+        "key_fingerprint": "2c2b829c729fa20b35b1fdcb2b1b5fc68abd490ca6204c62ffa5f56145bf8869",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Komal KesireddyPT",
+          "fld_99953c705450": "532435"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 94
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_ef11e0afef75",
+        "key_fingerprint": "13ac231dbccc1031fb982850f6a94cbff1b6e00ef923fc76f095a6a63a0da8cb",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Wendy Cloudfreept",
+          "fld_99953c705450": "531155"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 95
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_dc926a884e6c",
+        "key_fingerprint": "830eef601fb2754b0c7ef2efb2249a4b6337da565444727c2531fa3e59b83a03",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "admin page",
+          "fld_99953c705450": "478487"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 98
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_8ffb42632c70",
+        "key_fingerprint": "551db9356ff3cda5b6f2d1d0f095287570329dcbb41b2ebcfad7ce76e7ecf0be",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Kalendar",
+          "fld_99953c705450": "553245"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 100
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_5e77f7348e83",
+        "key_fingerprint": "d1b2a94a156d489bcbc53110f1a342c98da3ff3add036f64150d60830f3c6db3",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Selena Quintanilla",
+          "fld_99953c705450": "356845"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 108
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_839f6d3f9068",
+        "key_fingerprint": "8b5a187f0ce8bbe1fd4ab03514c02e686595daa3513e07c3eec25a9ab9950557",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Sheetal PandaPT",
+          "fld_99953c705450": "532508"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 124
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_20f440ff6c98",
+        "key_fingerprint": "4087cf328f5f49940cc19dad87fdc4668a3714d2f703a793cadce9c64a07cb6d",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Alejandro Montecinos",
+          "fld_99953c705450": "419711"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 152
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_3e48f76087cf",
+        "key_fingerprint": "cdbb1ac6c2909140a426b569ab91bae99ea9e1a98e435495dca0b7da72f2af53",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "KiranECMDC",
+          "fld_99953c705450": "531435"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 158
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_63a2068270f0",
+        "key_fingerprint": "82b226c86356dea9a6244e76b14ab857ef4b9be3f6ff40bf32a70f1926166fcb",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "KiranECM",
+          "fld_99953c705450": "530697"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 160
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_31979415a300",
+        "key_fingerprint": "d002a9daf44c3284f8eecd07b63b7d546654a18007fe35ae4d280db59cb95792",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "therapistPT",
+          "fld_99953c705450": "432825"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 172
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_de156e5262f4",
+        "key_fingerprint": "c85a19ef50cb7b4f22eb9f328ef680f36c323a11969fa1a2f78e87bef86ebff5",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Abdias Alpire",
+          "fld_99953c705450": "503402"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 199
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_2f9d12125a3e",
+        "key_fingerprint": "1651fff604d345ac1be47132e122e8fe31695c89b947c79a4cc65557b8b2603c",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "America RivasPT",
+          "fld_99953c705450": "553263"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 201
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_5b26d222ded3",
+        "key_fingerprint": "1450a85126beeb245a9c0b1f2cb4a09f16311bfbb7fe2ccfa4e51a5d8fa9b637",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "prodcut",
+          "fld_99953c705450": "532011"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 212
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_037e71cec2f8",
+        "key_fingerprint": "2fcc9f37d3797e530e0da30b810f9ce4d003e4081e7682b81d537a8b68ef460a",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Harish",
+          "fld_99953c705450": "541358"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 222
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_196b15b7c8ae",
+        "key_fingerprint": "ecf47d14872cd43362a7fe6ba5f0a2e1f4029a3f2c8148e9f435f99cf3af10e3",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Alejandra",
+          "fld_99953c705450": "472202"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 223
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_616e0ce39462",
+        "key_fingerprint": "c05897092fdf4de738189e5977431418a535a0d86cf6d5af650fc7568a410a3a",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "App Testing",
+          "fld_99953c705450": "344314"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 236
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_7bc24ec17634",
+        "key_fingerprint": "96bc69693c9ea61f934e0b414097d8edce82697da6f230cf0128b088b690f2dc",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Backdoor Test",
+          "fld_99953c705450": "464314"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 251
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_78989a3a5331",
+        "key_fingerprint": "e68307b95574209a248bc5cd657d97114a9c9712b298391aaa2c0d0f28ae1a03",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Wendy Testing-Demo",
+          "fld_99953c705450": "488467"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 284
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_178e20ed0065",
+        "key_fingerprint": "9e171717c76348cf9a8db558fe547f49fb9ac3289b323c8db6a41ed86de1b887",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "John Cena",
+          "fld_99953c705450": "445585"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 293
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_aaeba3c87e2a",
+        "key_fingerprint": "36f82ed9756537e94509b413b749dfee35180a85160bcac88ebc620c2edefa05",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "akshitha jogula",
+          "fld_99953c705450": "512459"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 347
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_74855272aded",
+        "key_fingerprint": "131fa2727c52e70842afbeb107b9ae4cd4fe969c4d262f06b1c8dd560b1a321b",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Bruce Banner",
+          "fld_99953c705450": "238473"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 366
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_ad95698879e9",
+        "key_fingerprint": "e30778caddd412c71e25adab47ba7f1d3e04128610430f53818db2d10e102023",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Mohammed Abdul Muneer",
+          "fld_99953c705450": "517924"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 461
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_cb361d714ca1",
+        "key_fingerprint": "35e3ccfa79dcb5119293c9a05516ee23d37586443caf31fca8dfb20390accaf8",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "AutoCharishma",
+          "fld_99953c705450": "529354"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 508
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_c1cce7c53bd6",
+        "key_fingerprint": "9ad162b31541df6ad541bb33fb221362af09a984af5bd2a9f0128cfaac6d4401",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "suma10354",
+          "fld_99953c705450": "529536"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 560
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_947c485bb45e",
+        "key_fingerprint": "2057a250bd6f3e1c2fafb5cadd9d87ed0d660c7248c255010f100ed5fcb77cac",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "1APM-Public",
+          "fld_99953c705450": "447883"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 595
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_1db8247bc474",
+        "key_fingerprint": "43a64ca965d92af7c91718057f95276304be575bbf1638d6f22265df5a192207",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "John Cena",
+          "fld_99953c705450": "471767"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 619
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_b76ca9615166",
+        "key_fingerprint": "7b24b7d15faf4a0dccbccbc9208fe4bd3d8364f9c0f73244f68e86874a7307f7",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Greg Burke",
+          "fld_99953c705450": "243898"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 681
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_2aa9f9f5dcee",
+        "key_fingerprint": "9401622de7acaf77748e6e8f200b8c3f8e4ed574266659351eccf34fc0bcdb64",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "QA OT",
+          "fld_99953c705450": "114461"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 704
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_9732295765af",
+        "key_fingerprint": "654b1fa846815fe0c688ba52aed44ebd3abc19fe96700ecd9ff67cb08e04d0e6",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "10lizbet test",
+          "fld_99953c705450": "463966"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 770
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_d4edbf6ab242",
+        "key_fingerprint": "d1cbc8c526f9c0d2390fefe6c81e3d8252bb7b5ec39bb89264f964ce6ecc1ae0",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "cherry end user",
+          "fld_99953c705450": "529415"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 883
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_b8113e380b47",
+        "key_fingerprint": "47e6f8212cf54bd5d3c09d5911cf9722e2f917ed4673c8eacae4bcdcadeb4956",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "varu",
+          "fld_99953c705450": "459953"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 943
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_dc38226572e8",
+        "key_fingerprint": "09fa7d05ca1da2da729fa993ff0cce2a8d70737183c022c154d8abb4190034cb",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Komal Kesireddy",
+          "fld_99953c705450": "517491"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 953
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_de14799f1be4",
+        "key_fingerprint": "30a8155411d0a95df385f075c744013b4ec97cec38dd5df7a0ae85db4e0bf99f",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "ProddPT",
+          "fld_99953c705450": "531162"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 1089
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_100b4ec09819",
+        "key_fingerprint": "3af31d1fea994dc4026a7f84e5461e6176733cf0e9df580fe620967851db3057",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Claudio Palacios",
+          "fld_99953c705450": "468962"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 1108
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_8dd9ec0ee10f",
+        "key_fingerprint": "0e22475ad0508945b408d72fc75cd7e12e0f97d15a03ab64427711df3a7db75e",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Automation ProdPTOwner",
+          "fld_99953c705450": "543777"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 1143
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_4c2308becf5f",
+        "key_fingerprint": "80e9003657fc48aaf96ef484dc6f4f26573749010ac8cfd9bd43f3b0f9582be0",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Test User Couchbase Incident 1",
+          "fld_99953c705450": "471412"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 1178
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_d7e5ed1da51d",
+        "key_fingerprint": "c81a8934b5dc1d4fd75df98da03c3b1b1aa04aac09e3af386dc2f67ca7c3b947",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "addnew user",
+          "fld_99953c705450": "470643"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 1389
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_a263b5e11bed",
+        "key_fingerprint": "8b4e67c8763be6ec3a0d06b9ffced77df5176bab3a6cc7e9e382d26ae6af5964",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "ptuser7",
+          "fld_99953c705450": "545950"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 1492
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_d588d9c0b1da",
+        "key_fingerprint": "71c1dcccd22cc9daff5e13124a9e7f2544fea79453c8d47ce55e2870c893d20f",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Sheetal PandaClerical",
+          "fld_99953c705450": "532514"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 1527
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_9d3ff85d43e7",
+        "key_fingerprint": "84ac5036e64e091d0bc94e89625f85915b2cc3e912d7be79685949d810dbc1fe",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "SwathiProd",
+          "fld_99953c705450": "504667"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 1790
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_bdaa2d5b3b8d",
+        "key_fingerprint": "9c34a0877f5acd6b0f35936f1bae1a1289ada6eb3619448db36de4efb33c5e0c",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "ChocoChip",
+          "fld_99953c705450": "472197"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 1887
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_844bdbcb962d",
+        "key_fingerprint": "ac391777c525da21d3f25b7abe195ae271ac0deb5b74cdbc3a862d4cda55f07d",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Bily Foster - Test Schedule",
+          "fld_99953c705450": "324856"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 2179
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_0d3759368e58",
+        "key_fingerprint": "ab132b0deee8c065d0cc8b7f115e62b864448bc5ba2aeaaabea449d42a3d2db7",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Alan Umatilla",
+          "fld_99953c705450": "463194"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 2449
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_418adc0aecd3",
+        "key_fingerprint": "922b11323ee829f0f71413f77cef61f4ee840af5170ebeef8caa1a0f40cadd1e",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Archana Otuser",
+          "fld_99953c705450": "529394"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 2491
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_b4139a8a2b7d",
+        "key_fingerprint": "2dd50ec51dd5f0639927fd83b6088832500c657f860d921d74ac978227af3034",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Test User SLP",
+          "fld_99953c705450": "620339"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 2605
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_6eb883096d8d",
+        "key_fingerprint": "00d4335a204acfa396cd2eb69a3a8c3c846e542ce11aa4db4b1bb2cca6f09467",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "KiranBHCProd",
+          "fld_99953c705450": "561215"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 2695
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_05d852670a93",
+        "key_fingerprint": "e1b20092c3d2ae10427203ab5482c8e7d9a7f056267bca87cc82fdaaaa5e0b2d",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Varaprasad Nakka",
+          "fld_99953c705450": "527344"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 2913
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_8a25feeb2974",
+        "key_fingerprint": "e2c55dd72a9f86e513873d50e322d038e34b2edcbf87bf5c26eafe01f9f4fb94",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Testing User",
+          "fld_99953c705450": "258149"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 3399
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_42298339028b",
+        "key_fingerprint": "58466579c5ce634d65b9da75e73ef64708e232688d7b615bcd25ee3920a65961",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Test Samoas",
+          "fld_99953c705450": "489350"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 3581
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_8531a6cc2b46",
+        "key_fingerprint": "197c1a030fd1394b449bfe3975992d11926bc7475627dba12456b820a7079bbc",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Mirza Navia",
+          "fld_99953c705450": "471321"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 3688
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_e8e706324a01",
+        "key_fingerprint": "8443f891a1b8bdcb4ef40b02df95c7ba699254cb61fb9f1e23627649a86b6a45",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Black Coffee",
+          "fld_99953c705450": "286325"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 3780
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_2dfd4440e908",
+        "key_fingerprint": "f8730b001986852902141404779ec9e8add46da94a3001c3434371429178e584",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Emma Junaro",
+          "fld_99953c705450": "456803"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 3867
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_0c1e3918af5e",
+        "key_fingerprint": "792cf96b8bcaf7e40e32582b7b907db93aa94093589213d537b6c81638bc9e13",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "varu lakshmi",
+          "fld_99953c705450": "531167"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 3992
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_f00168162661",
+        "key_fingerprint": "efef74cdd552abd0a8493ca1027852ec3ca4d82faea72eecffc442282941cf03",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Sergio Pozo",
+          "fld_99953c705450": "476710"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 4242
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_78a3e9ff2298",
+        "key_fingerprint": "239c6dd5db4f4715025cdcf56c80f14e0bcce1fc06218b60aec422d8133a0b0b",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Siri's SLP",
+          "fld_99953c705450": "532503"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 4347
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_18f9a485d995",
+        "key_fingerprint": "7cfda650d4f6ae4399f8c275fce5b9e48779575a199a1f2cb671a3ca6f24ae07",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Rob Van Winkle",
+          "fld_99953c705450": "185531"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 4378
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_75703f9b9435",
+        "key_fingerprint": "cef57048d2f7968300c1545150f3ce4e648939d9e5671e8a016c6e371efa6d7d",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T21:53:12Z",
+        "values": {
+          "fld_802abd68d30f": "Abbas",
+          "fld_99953c705450": "397114"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 4745
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_84a3e6e35443",
+        "key_fingerprint": "43d0fd72d4ddad04dd3de147e625279761326878be4ca681229a82432b848226",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T22:07:20Z",
+        "values": {
+          "fld_802abd68d30f": "SubwayEMR-986",
+          "fld_99953c705450": "427282"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 12329
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_767bf4d6a883",
+        "key_fingerprint": "6541930baad867eaaf77171b1278cb47a94bfa23e3bc248360b8202347c5b8c8",
+        "key_id": "key_18ec25018641",
+        "saved_at": "2026-08-04T22:08:12Z",
+        "values": {
+          "fld_802abd68d30f": "Yuki's calendar",
+          "fld_99953c705450": "495062"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/FTPQ/downloads/Daniel_test_config11_PDE Appointments_20260720_050439.csv",
+          "row_index": 7111
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      }
+    ]
+  }
+}

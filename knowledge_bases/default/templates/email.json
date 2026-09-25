@@ -1,0 +1,112 @@
+{
+  "_meta": {
+    "schema_version": "2.0",
+    "template_id": "email",
+    "knowledge_base_id": "default",
+    "created_at": "2026-07-31T19:00:53Z",
+    "updated_at": "2026-08-04T15:45:02Z"
+  },
+  "header": {
+    "name": "email",
+    "fields": [
+      {
+        "field_id": "fld_fc8c0ae636fc",
+        "label": "Email",
+        "column": "Email",
+        "required": false
+      },
+      {
+        "field_id": "fld_bb415140a2a1",
+        "label": "Name",
+        "column": "Name",
+        "required": false
+      }
+    ],
+    "keys": [
+      {
+        "key_id": "key_8fdfbc5c37cc",
+        "label": "Email + Name",
+        "field_ids": [
+          "fld_fc8c0ae636fc",
+          "fld_bb415140a2a1"
+        ],
+        "primary": true
+      }
+    ],
+    "evaluation": {
+      "columns": [
+        "Email",
+        "Name"
+      ],
+      "show_only_evaluated": false
+    }
+  },
+  "minibase": {
+    "dedup": {
+      "key_id": "key_8fdfbc5c37cc",
+      "strategy": "composite_key"
+    },
+    "records": [
+      {
+        "record_id": "rec_17bbe7786f67",
+        "key_fingerprint": "6d7bc05f4b9678b24bf4ea224b3565cbdb4f8a45050cc986e7f67fa8457d8a48",
+        "key_id": "key_8fdfbc5c37cc",
+        "saved_at": "2026-08-04T15:44:45Z",
+        "values": {
+          "fld_fc8c0ae636fc": "dan.berry@webpt.com",
+          "fld_bb415140a2a1": "dan.berry"
+        },
+        "source": {
+          "file_name": "User_Leaderboard_2026-02-21_2026-02-27.csv",
+          "file_path": "/Users/daniel.gallinate/Downloads/User_Leaderboard_2026-02-21_2026-02-27.csv",
+          "row_index": 84
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_8673d6dfbad0",
+        "key_fingerprint": "996089ee48be3b2fd25f799ae965782ec1b5d744d5f3cc998ceb5ef25518d007",
+        "key_id": "key_8fdfbc5c37cc",
+        "saved_at": "2026-08-04T15:45:01Z",
+        "values": {
+          "fld_fc8c0ae636fc": "mauricio.canseco@webpt.com",
+          "fld_bb415140a2a1": "mauricio.canseco"
+        },
+        "source": {
+          "file_name": "User_Leaderboard_2026-02-21_2026-02-27.csv",
+          "file_path": "/Users/daniel.gallinate/Downloads/User_Leaderboard_2026-02-21_2026-02-27.csv",
+          "row_index": 83
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_8022a20c6f5a",
+        "key_fingerprint": "a2bfea8e48697669269f0eead46ad47b510f5be767a0b3ec3ab80d7746b5b87a",
+        "key_id": "key_8fdfbc5c37cc",
+        "saved_at": "2026-08-04T15:45:02Z",
+        "values": {
+          "fld_fc8c0ae636fc": "pooja.nallabelli@webpt.com",
+          "fld_bb415140a2a1": "pooja.nallabelli"
+        },
+        "source": {
+          "file_name": "User_Leaderboard_2026-02-21_2026-02-27.csv",
+          "file_path": "/Users/daniel.gallinate/Downloads/User_Leaderboard_2026-02-21_2026-02-27.csv",
+          "row_index": 82
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      }
+    ]
+  }
+}

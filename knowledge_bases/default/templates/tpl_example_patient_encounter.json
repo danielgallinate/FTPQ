@@ -1,0 +1,123 @@
+{
+  "_meta": {
+    "schema_version": "2.0",
+    "template_id": "tpl_example_patient_encounter",
+    "knowledge_base_id": "default",
+    "created_at": "2026-07-29T18:00:00Z",
+    "updated_at": "2026-07-29T18:00:00Z"
+  },
+  "header": {
+    "name": "Ejemplo — Paciente + Encuentro",
+    "description": "Template de referencia v2.0. CSV con columnas mrn, encounter_id, visit_date, status.",
+    "file_hints": {
+      "extensions": [".csv", ".tsv", ".psv"],
+      "filename_contains": ["encounter", "patient"]
+    },
+    "fields": [
+      {
+        "field_id": "fld_mrn",
+        "label": "MRN",
+        "column": "mrn",
+        "required": true,
+        "notes": "Medical record number"
+      },
+      {
+        "field_id": "fld_encounter_id",
+        "label": "Encounter ID",
+        "column": "encounter_id",
+        "required": true
+      },
+      {
+        "field_id": "fld_visit_date",
+        "label": "Visit date",
+        "column": "visit_date",
+        "required": false
+      },
+      {
+        "field_id": "fld_status",
+        "label": "Status",
+        "column": "status",
+        "required": false,
+        "notes": "Ej. A=activo, I=inactivo"
+      }
+    ],
+    "keys": [
+      {
+        "key_id": "key_patient_encounter",
+        "label": "Paciente + encuentro",
+        "field_ids": ["fld_mrn", "fld_encounter_id"],
+        "primary": true
+      },
+      {
+        "key_id": "key_mrn_only",
+        "label": "Solo MRN",
+        "field_ids": ["fld_mrn"],
+        "primary": false
+      }
+    ],
+    "rules": [
+      {
+        "rule_id": "rule_mrn_not_empty",
+        "target_type": "field",
+        "target_id": "fld_mrn",
+        "type": "not_empty",
+        "message": "MRN no puede estar vacío"
+      },
+      {
+        "rule_id": "rule_encounter_not_empty",
+        "target_type": "field",
+        "target_id": "fld_encounter_id",
+        "type": "not_empty",
+        "message": "Encounter ID requerido"
+      },
+      {
+        "rule_id": "rule_status_values",
+        "target_type": "field",
+        "target_id": "fld_status",
+        "type": "in_list",
+        "params": { "values": ["A", "I", "P"] },
+        "message": "Status debe ser A, I o P"
+      },
+      {
+        "rule_id": "rule_pk_unique_in_file",
+        "target_type": "key",
+        "target_id": "key_patient_encounter",
+        "type": "unique_in_file",
+        "message": "Combinación MRN + Encounter duplicada en el archivo"
+      }
+    ],
+    "evaluation": {
+      "columns": ["mrn", "encounter_id", "visit_date", "status"],
+      "show_only_evaluated": false
+    }
+  },
+  "minibase": {
+    "dedup": {
+      "key_id": "key_patient_encounter",
+      "strategy": "composite_key"
+    },
+    "records": [
+      {
+        "record_id": "rec_demo001",
+        "key_fingerprint": "09d5e050f1205e1a880186eeac3a2182d34b51d31d6df1d5a07712eecd0fe7fa",
+        "key_id": "key_patient_encounter",
+        "saved_at": "2026-07-29T18:00:00Z",
+        "source": {
+          "file_name": "sample_encounters.csv",
+          "row_index": 0
+        },
+        "values": {
+          "fld_mrn": "001234",
+          "fld_encounter_id": "ENC-99",
+          "fld_visit_date": "2026-07-22",
+          "fld_status": "A"
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": ["mrn", "encounter_id", "visit_date", "status"]
+        }
+      }
+    ]
+  }
+}

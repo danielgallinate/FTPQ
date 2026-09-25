@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "name": "qa-run2",
+  "mode": "qa",
+  "knowledge_base_id": "default",
+  "reference": {
+    "duplicate_policy": "first",
+    "pairs": [],
+    "left_catalog_bindings": {}
+  },
+  "qa": {
+    "template_paths": [],
+    "catalog_ids": [
+      "clinic_qa",
+      "fisicos_qa",
+      "icd_qa"
+    ],
+    "catalogs": [
+      {
+        "catalog_id": "fisicos_qa",
+        "link_column": "SECONDARY_PHYSICIAN_ID"
+      },
+      {
+        "catalog_id": "icd_qa",
+        "link_column": "ICD_10"
+      }
+    ],
+    "highlight_mode": "fail_any"
+  },
+  "validation": {
+    "template_path": ""
+  },
+  "thresholds": {},
+  "max_rows": 5000,
+  "row_limit": "5000",
+  "evaluated_columns": [
+    "EXTRACT_FILE_RECORD_ID",
+    "EXTRACT_DATE_TIME",
+    "EXPORT_FLAG",
+    "ADDITIONAL_INFO",
+    "AUTHORIZATION_REQUIRED",
+    "CASE_ALT_ID",
+    "CASE_CLOSED_DATE",
+    "CASE_CREATION_DATE",
+    "CASE_ID",
+    "CASE_NAME",
+    "CASE_OPEN_DATE",
+    "CASE_STATUS",
+    "CLINIC_ID",
+    "CONTACT_FIRST_NAME",
+    "CONTACT_LAST_NAME",
+    "CONTACT_NAME",
+    "ICD_10",
+    "INSTYPEID",
+    "MEDICARE",
+    "MODIFIED_DATE",
+    "PATIENT_ID",
+    "PLACE_OF_SERVICE",
+    "PRIMARYINS",
+    "PRIMARYINS_VERIFIED_DATE",
+    "PRIMARY_THERAPIST",
+    "PRIMARY_TREATMENT_CLINIC",
+    "RECORD_ID",
+    "REFERRAL_DATE",
+    "REFERRING_DOC",
+    "RELATED_CAUSE",
+    "REQUESTED_PROVIDER",
+    "RETURN_TO_DR",
+    "SECONDARYINS",
+    "SECONDARYINS_VERIFIED_DATE",
+    "SECONDARY_PHYSICIAN_ID",
+    "TERTIARY_PHYSICIAN_ID",
+    "HL7_DATE"
+  ],
+  "timezone": {
+    "source_tz": "UTC",
+    "target_tz": "UTC",
+    "columns": [
+      "CASE_CLOSED_DATE",
+      "CASE_CREATION_DATE",
+      "CASE_OPEN_DATE",
+      "EXTRACT_DATE_TIME",
+      "MODIFIED_DATE",
+      "PRIMARYINS_VERIFIED_DATE",
+      "REFERRAL_DATE",
+      "SECONDARYINS_VERIFIED_DATE"
+    ]
+  }
+}

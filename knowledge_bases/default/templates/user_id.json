@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "schema_version": "2.0",
+    "template_id": "user_id",
+    "knowledge_base_id": "default",
+    "created_at": "2026-08-04T18:47:13Z",
+    "updated_at": "2026-08-04T18:47:22Z"
+  },
+  "header": {
+    "name": "user id",
+    "fields": [
+      {
+        "field_id": "fld_6a8b09df137d",
+        "label": "User",
+        "column": "User",
+        "required": false
+      },
+      {
+        "field_id": "fld_fadf2025cb06",
+        "label": "User ID",
+        "column": "User ID",
+        "required": false
+      }
+    ],
+    "keys": [
+      {
+        "key_id": "key_bd042fa1cb3c",
+        "label": "PK User ID",
+        "field_ids": [
+          "fld_fadf2025cb06"
+        ],
+        "primary": true
+      }
+    ],
+    "evaluation": {
+      "columns": [
+        "User",
+        "User ID"
+      ],
+      "show_only_evaluated": false
+    }
+  },
+  "minibase": {
+    "dedup": {
+      "key_id": "key_bd042fa1cb3c",
+      "strategy": "composite_key"
+    },
+    "records": [
+      {
+        "record_id": "rec_3b1294920e14",
+        "key_fingerprint": "c3fab50281263edfeb8f021801dc545337b9c0b1a5a3ec3b024fa9b9a3f34e72",
+        "key_id": "key_bd042fa1cb3c",
+        "saved_at": "2026-08-04T18:47:17Z",
+        "values": {
+          "fld_6a8b09df137d": "Synthetic Monitoring",
+          "fld_fadf2025cb06": "466157"
+        },
+        "source": {
+          "file_name": "history_log.csv",
+          "file_path": "/Users/daniel.gallinate/Downloads/history_log.csv",
+          "row_index": 0
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_a25c9aa1cad7",
+        "key_fingerprint": "c126fa532dacd1cdebc1f7436590a1a222681091d0fd6897f10c99e9068293c5",
+        "key_id": "key_bd042fa1cb3c",
+        "saved_at": "2026-08-04T18:47:17Z",
+        "values": {
+          "fld_6a8b09df137d": "Raju Muniganti",
+          "fld_fadf2025cb06": "481393"
+        },
+        "source": {
+          "file_name": "history_log.csv",
+          "file_path": "/Users/daniel.gallinate/Downloads/history_log.csv",
+          "row_index": 228
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_f07e7e9a354f",
+        "key_fingerprint": "3ff63a0f86a04a1919705d8a044eba35e5b2358e4b91c24f1dbfbbad9fe52618",
+        "key_id": "key_bd042fa1cb3c",
+        "saved_at": "2026-08-04T18:47:18Z",
+        "values": {
+          "fld_6a8b09df137d": "Margie D'Errico-WebPT",
+          "fld_fadf2025cb06": "380870"
+        },
+        "source": {
+          "file_name": "history_log.csv",
+          "file_path": "/Users/daniel.gallinate/Downloads/history_log.csv",
+          "row_index": 308
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_38ac42025988",
+        "key_fingerprint": "858b5150601546be2d8c57926670aa1a355479ef7b57cd96268bed8d6b1123a4",
+        "key_id": "key_bd042fa1cb3c",
+        "saved_at": "2026-08-04T18:47:19Z",
+        "values": {
+          "fld_6a8b09df137d": "Webpt - Nikitha Madaaram",
+          "fld_fadf2025cb06": "558456"
+        },
+        "source": {
+          "file_name": "history_log.csv",
+          "file_path": "/Users/daniel.gallinate/Downloads/history_log.csv",
+          "row_index": 317
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_8033c7185b5e",
+        "key_fingerprint": "99dce183746c041fcc4ff59872f02eefe6ead742e9aab271a4cf3632720c2068",
+        "key_id": "key_bd042fa1cb3c",
+        "saved_at": "2026-08-04T18:47:19Z",
+        "values": {
+          "fld_6a8b09df137d": "WebPT - Heather Trana",
+          "fld_fadf2025cb06": "519709"
+        },
+        "source": {
+          "file_name": "history_log.csv",
+          "file_path": "/Users/daniel.gallinate/Downloads/history_log.csv",
+          "row_index": 322
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_42605141d97b",
+        "key_fingerprint": "45c15a0a84ca3da90736bed51c4a53c8aea76489f2f6292dc4a0d5967bb659ae",
+        "key_id": "key_bd042fa1cb3c",
+        "saved_at": "2026-08-04T18:47:20Z",
+        "values": {
+          "fld_6a8b09df137d": "WebTP - Manasa M",
+          "fld_fadf2025cb06": "515183"
+        },
+        "source": {
+          "file_name": "history_log.csv",
+          "file_path": "/Users/daniel.gallinate/Downloads/history_log.csv",
+          "row_index": 327
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_2f7d07b45557",
+        "key_fingerprint": "cf8060a607b19e3d81bbe4963554c6b34dc30bffe035d40aa7635e835f9ec87e",
+        "key_id": "key_bd042fa1cb3c",
+        "saved_at": "2026-08-04T18:47:20Z",
+        "values": {
+          "fld_6a8b09df137d": "Debbie Vaughn",
+          "fld_fadf2025cb06": "386453"
+        },
+        "source": {
+          "file_name": "history_log.csv",
+          "file_path": "/Users/daniel.gallinate/Downloads/history_log.csv",
+          "row_index": 348
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_c038ce9f12ff",
+        "key_fingerprint": "a0f7c93168d61f5ae229bc7536957821f98f1c72fcac5ede7fbd1276a505a681",
+        "key_id": "key_bd042fa1cb3c",
+        "saved_at": "2026-08-04T18:47:21Z",
+        "values": {
+          "fld_6a8b09df137d": "WebPT - Venkateswar Reddy",
+          "fld_fadf2025cb06": "503371"
+        },
+        "source": {
+          "file_name": "history_log.csv",
+          "file_path": "/Users/daniel.gallinate/Downloads/history_log.csv",
+          "row_index": 422
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_fc85826602ff",
+        "key_fingerprint": "3eb922ebe2dae9194ddbe8d16ab7805fe2aa332a1c3f42a04b0494baf4397ef4",
+        "key_id": "key_bd042fa1cb3c",
+        "saved_at": "2026-08-04T18:47:21Z",
+        "values": {
+          "fld_6a8b09df137d": "WebPT - Venkatesham Kichhannapalle",
+          "fld_fadf2025cb06": "491824"
+        },
+        "source": {
+          "file_name": "history_log.csv",
+          "file_path": "/Users/daniel.gallinate/Downloads/history_log.csv",
+          "row_index": 431
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_d1ddd0e98b76",
+        "key_fingerprint": "934f72439993ac6ed1909231621a106cb4146df0cf6b507c78c18b5444873831",
+        "key_id": "key_bd042fa1cb3c",
+        "saved_at": "2026-08-04T18:47:22Z",
+        "values": {
+          "fld_6a8b09df137d": "Rakesh Atthi",
+          "fld_fadf2025cb06": "510646"
+        },
+        "source": {
+          "file_name": "history_log.csv",
+          "file_path": "/Users/daniel.gallinate/Downloads/history_log.csv",
+          "row_index": 467
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      }
+    ]
+  }
+}

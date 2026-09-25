@@ -1,0 +1,95 @@
+EMR QA — User manual (iteration 2)
+==================================
+
+What it is
+----------
+EMR QA is a local tool to open tabular files (CSV, TSV, PSV), define validation
+templates, and compare rows against a reference minibase. Everything stays on
+your machine; no SFTP or remote database.
+
+Startup
+-------
+  ./scripts/run_emr_qa_editor.sh
+
+Requires Python 3.12+, native macOS or Windows with WSL2.
+
+Initial screen
+--------------
+On launch you see the local file browser (Downloads by default).
+Double-click a tabular file for the menu:
+  • Open     — view data in the grid (no validation).
+  • Validate — grid plus validation panel on the right.
+
+Top menu
+--------
+File
+  • Close file — return to the browser.
+  • Quit
+
+View
+  • Wallpaper… / Icon… — window appearance.
+  • Key — optional minibase encryption in templates:
+      - Generate new key… (warns that templates encrypted with the previous
+        key will not open until you load that key again).
+      - Load existing key…
+      - Export active key… (back up if you use encryption).
+
+Help
+  • About EMR QA — description and link to this manual.
+  • Language — Spanish / English.
+
+Validate mode — right panel (4 tabs)
+------------------------------------
+1. View
+   Same options as the grid sidebar: visible columns, filters, highlighting.
+   Columns not marked for evaluation may appear gray.
+
+2. Validation
+   • Create / Load template (JSON v2.0 under knowledge_bases/.../templates/).
+   • Set primary key (simple or composite) before saving records.
+   • Add records from marked grid rows or the form.
+   • Duplicate minibase entries are rejected.
+
+3. Template Edit
+   • Edit the minibase as a table (add/remove rows, edit cells).
+   • Save persists changes; encrypted templates stay encrypted on save.
+   • Encrypt minibase — requires an active key and explicit action (View → Key).
+
+4. QA
+   • Check one or more templates to validate the open file against several
+     minibases at once.
+   • OK/NOK metrics, charts, and report in the QA panel.
+
+Progress bar and messages
+-------------------------
+In Validate mode, the bottom bar shows validation progress.
+The message strip collects alerts: key errors, duplicates, encrypted templates
+without a key, file errors, etc.
+
+Templates (concept)
+-------------------
+A template JSON contains:
+  • header — name, columns, logical keys, rules.
+  • minibase — validated golden records.
+
+Plaintext and encrypted templates can coexist. Encrypted ones store
+header.encryption.key_id and minibase_sealed; they need the matching active key.
+
+Data locations
+--------------
+  emr-qa/knowledge_bases/<kb_id>/templates/*.json
+  emr-qa/config/template_encryption.key  (do not share or commit)
+
+Typical workflow
+----------------
+1. Validate an encounters CSV.
+2. Validation tab: create template, pick key columns (e.g. MRN + encounter).
+3. Mark correct rows in the grid → add to minibase.
+4. (Optional) Template Edit → Encrypt minibase when a key is active.
+5. QA tab: cross-check the same file against other templates.
+
+Limitations
+-----------
+• Individual local use; do not distribute templates with PHI outside org policy.
+• Encryption protects minibase at rest; column names remain visible in header.
+• No live EMR connection — only files you open locally.

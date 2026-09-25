@@ -1,0 +1,141 @@
+{
+  "_meta": {
+    "schema_version": "2.0",
+    "template_id": "tpl_f33893896243",
+    "knowledge_base_id": "default",
+    "created_at": "2026-07-29T20:48:06Z",
+    "updated_at": "2026-07-29T20:48:06Z"
+  },
+  "header": {
+    "name": "Template Daniel_test_config13_PDE Transactions_20260715_050441",
+    "fields": [
+      {
+        "field_id": "fld_74792c417112",
+        "label": "EXTRACT_FILE_RECORD_ID",
+        "column": "EXTRACT_FILE_RECORD_ID",
+        "required": false
+      },
+      {
+        "field_id": "fld_f02a8da56a0b",
+        "label": "OTC_ID",
+        "column": "OTC_ID",
+        "required": false
+      },
+      {
+        "field_id": "fld_7c6d41a1af6f",
+        "label": "CASE_ID",
+        "column": "CASE_ID",
+        "required": false
+      },
+      {
+        "field_id": "fld_78a26d8d11cc",
+        "label": "VISIT_DATE",
+        "column": "VISIT_DATE",
+        "required": false
+      },
+      {
+        "field_id": "fld_3b198d667802",
+        "label": "PAYMENT_DATE",
+        "column": "PAYMENT_DATE",
+        "required": false
+      },
+      {
+        "field_id": "fld_ec4d7c75cfa3",
+        "label": "DOLLAR_AMOUNT_PAID",
+        "column": "DOLLAR_AMOUNT_PAID",
+        "required": false
+      },
+      {
+        "field_id": "fld_c2b5955c0856",
+        "label": "PATIENT_ID",
+        "column": "PATIENT_ID",
+        "required": false
+      },
+      {
+        "field_id": "fld_c3058c60d44a",
+        "label": "DESCRIPTION",
+        "column": "DESCRIPTION",
+        "required": false
+      },
+      {
+        "field_id": "fld_9a8e91b79933",
+        "label": "CLINIC_ID",
+        "column": "CLINIC_ID",
+        "required": false
+      },
+      {
+        "field_id": "fld_a3f3301d6b4b",
+        "label": "TXN_PAID",
+        "column": "TXN_PAID",
+        "required": false
+      },
+      {
+        "field_id": "fld_23192e346cba",
+        "label": "TXN_STATUS",
+        "column": "TXN_STATUS",
+        "required": false
+      },
+      {
+        "field_id": "fld_2209a0d8c233",
+        "label": "EXTRACT_DATE_TIME_UTC",
+        "column": "EXTRACT_DATE_TIME_UTC",
+        "required": false
+      },
+      {
+        "field_id": "fld_95ac51097377",
+        "label": "EXPORT_FLAG",
+        "column": "EXPORT_FLAG",
+        "required": false
+      },
+      {
+        "field_id": "fld_550f21afd97b",
+        "label": "PAYMENT_METHOD",
+        "column": "PAYMENT_METHOD",
+        "required": false
+      },
+      {
+        "field_id": "fld_b300462576df",
+        "label": "LAST_MODIFIED_DATE_TIME_UTC",
+        "column": "LAST_MODIFIED_DATE_TIME_UTC",
+        "required": false
+      }
+    ],
+    "keys": [
+      {
+        "key_id": "key_75c69d0e28af",
+        "label": "PK EXTRACT_FILE_RECORD_ID",
+        "field_ids": [
+          "fld_74792c417112"
+        ],
+        "primary": true
+      }
+    ],
+    "evaluation": {
+      "columns": [
+        "EXTRACT_FILE_RECORD_ID",
+        "OTC_ID",
+        "CASE_ID",
+        "VISIT_DATE",
+        "PAYMENT_DATE",
+        "DOLLAR_AMOUNT_PAID",
+        "PATIENT_ID",
+        "DESCRIPTION",
+        "CLINIC_ID",
+        "TXN_PAID",
+        "TXN_STATUS",
+        "EXTRACT_DATE_TIME_UTC",
+        "EXPORT_FLAG",
+        "PAYMENT_METHOD",
+        "LAST_MODIFIED_DATE_TIME_UTC"
+      ],
+      "show_only_evaluated": false
+    }
+  },
+  "minibase": {
+    "dedup": {
+      "key_id": "key_75c69d0e28af",
+      "strategy": "composite_key"
+    },
+    "records": []
+  }
+}

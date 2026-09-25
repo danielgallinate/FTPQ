@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "schema_version": "2.0",
+    "template_id": "tpl_11e6a231d2b8",
+    "knowledge_base_id": "default",
+    "created_at": "2026-07-29T22:16:18Z",
+    "updated_at": "2026-07-29T22:16:27Z"
+  },
+  "header": {
+    "name": "correos",
+    "fields": [
+      {
+        "field_id": "fld_ce26135d07a7",
+        "label": "Email",
+        "column": "Email",
+        "required": false
+      },
+      {
+        "field_id": "fld_aee296c899f7",
+        "label": "Name",
+        "column": "Name",
+        "required": false
+      }
+    ],
+    "keys": [
+      {
+        "key_id": "key_37caf6a56a15",
+        "label": "Email + Name",
+        "field_ids": [
+          "fld_ce26135d07a7",
+          "fld_aee296c899f7"
+        ],
+        "primary": true
+      }
+    ],
+    "evaluation": {
+      "columns": [
+        "Email",
+        "Name"
+      ],
+      "show_only_evaluated": false
+    }
+  },
+  "minibase": {
+    "dedup": {
+      "key_id": "key_37caf6a56a15",
+      "strategy": "composite_key"
+    },
+    "records": [
+      {
+        "record_id": "rec_9498f0435586",
+        "key_fingerprint": "ffe679bb831c95b67dc17819c63c5090d221aac6f4c7bf530f594ab43d21fa1e",
+        "key_id": "key_37caf6a56a15",
+        "saved_at": "2026-07-29T22:16:27Z",
+        "values": {
+          "fld_ce26135d07a7": "",
+          "fld_aee296c899f7": ""
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      }
+    ]
+  }
+}

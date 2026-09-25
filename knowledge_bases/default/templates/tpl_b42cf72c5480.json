@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "schema_version": "2.0",
+    "template_id": "tpl_b42cf72c5480",
+    "knowledge_base_id": "default",
+    "created_at": "2026-07-29T22:09:10Z",
+    "updated_at": "2026-07-29T22:10:33Z"
+  },
+  "header": {
+    "name": "emails",
+    "fields": [
+      {
+        "field_id": "fld_f2b9cb62e724",
+        "label": "Email",
+        "column": "Email",
+        "required": false
+      },
+      {
+        "field_id": "fld_8447a6a98a58",
+        "label": "Name",
+        "column": "Name",
+        "required": false
+      }
+    ],
+    "keys": [
+      {
+        "key_id": "key_25f54dd2e660",
+        "label": "Email + Name",
+        "field_ids": [
+          "fld_f2b9cb62e724",
+          "fld_8447a6a98a58"
+        ],
+        "primary": true
+      }
+    ],
+    "evaluation": {
+      "columns": [
+        "Email",
+        "Name"
+      ],
+      "show_only_evaluated": false
+    }
+  },
+  "minibase": {
+    "dedup": {
+      "key_id": "key_25f54dd2e660",
+      "strategy": "composite_key"
+    },
+    "records": [
+      {
+        "record_id": "rec_fbae8ff3596c",
+        "key_fingerprint": "ffe679bb831c95b67dc17819c63c5090d221aac6f4c7bf530f594ab43d21fa1e",
+        "key_id": "key_25f54dd2e660",
+        "saved_at": "2026-07-29T22:10:33Z",
+        "values": {
+          "fld_f2b9cb62e724": "",
+          "fld_8447a6a98a58": ""
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "_meta": {
+    "schema_version": "2.0",
+    "template_id": "clinic_name_qa",
+    "knowledge_base_id": "default",
+    "created_at": "2026-08-18T21:46:44Z",
+    "updated_at": "2026-08-18T21:46:48Z"
+  },
+  "header": {
+    "name": "clinic_name_qa",
+    "fields": [
+      {
+        "field_id": "fld_c8e6e078618b",
+        "label": "CLINIC_ID",
+        "column": "CLINIC_ID",
+        "required": false
+      },
+      {
+        "field_id": "fld_b3492c6e11f6",
+        "label": "CLINIC_NAME",
+        "column": "CLINIC_NAME",
+        "required": false
+      }
+    ],
+    "keys": [
+      {
+        "key_id": "key_b4e841fdb90a",
+        "label": "PK CLINIC_ID",
+        "field_ids": [
+          "fld_c8e6e078618b"
+        ],
+        "primary": true
+      }
+    ],
+    "evaluation": {
+      "columns": [
+        "CLINIC_ID",
+        "CLINIC_NAME"
+      ],
+      "show_only_evaluated": false
+    }
+  },
+  "minibase": {
+    "dedup": {
+      "key_id": "key_b4e841fdb90a",
+      "strategy": "composite_key"
+    },
+    "records": [
+      {
+        "record_id": "rec_92a95c464f30",
+        "key_fingerprint": "fb36a80f97ce3306d9f13bfb922e61f1ae41dc021cceada8fb90d85acd2661af",
+        "key_id": "key_b4e841fdb90a",
+        "saved_at": "2026-08-18T21:46:48Z",
+        "values": {
+          "fld_c8e6e078618b": "10354",
+          "fld_b3492c6e11f6": "QA Release Clinic"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Clinic_20260719_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/PDE TEST/Daniel_test_config11_PDE Clinic_20260719_050439.csv",
+          "row_index": 0
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_af67dba12639",
+        "key_fingerprint": "5a1106a954a34a68d7655fd3114f0f8854501159f28c4c43d52ee69d2561f852",
+        "key_id": "key_b4e841fdb90a",
+        "saved_at": "2026-08-18T21:46:48Z",
+        "values": {
+          "fld_c8e6e078618b": "17671",
+          "fld_b3492c6e11f6": "QA Release AMD Clinic"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Clinic_20260719_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/PDE TEST/Daniel_test_config11_PDE Clinic_20260719_050439.csv",
+          "row_index": 1
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_2fa20634a310",
+        "key_fingerprint": "05133844bff497e37fd1339314cfab5db8085849e76d743168884b9de2028a91",
+        "key_id": "key_b4e841fdb90a",
+        "saved_at": "2026-08-18T21:46:48Z",
+        "values": {
+          "fld_c8e6e078618b": "18805",
+          "fld_b3492c6e11f6": "QA Release - SOAP Dos Clinic"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Clinic_20260719_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/PDE TEST/Daniel_test_config11_PDE Clinic_20260719_050439.csv",
+          "row_index": 2
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_09b4ff305927",
+        "key_fingerprint": "df5db5eb84ff1a1c585bd39f8b5d60ea0df55f6f49e12422ce5eadb259c7a6c6",
+        "key_id": "key_b4e841fdb90a",
+        "saved_at": "2026-08-18T21:46:48Z",
+        "values": {
+          "fld_c8e6e078618b": "33473",
+          "fld_b3492c6e11f6": "QA Release EMR Team Clinic"
+        },
+        "source": {
+          "file_name": "Daniel_test_config11_PDE Clinic_20260719_050439.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/PDE TEST/Daniel_test_config11_PDE Clinic_20260719_050439.csv",
+          "row_index": 3
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      }
+    ]
+  }
+}

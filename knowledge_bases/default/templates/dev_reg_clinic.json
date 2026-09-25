@@ -1,0 +1,142 @@
+{
+  "_meta": {
+    "schema_version": "2.0",
+    "template_id": "dev_reg_clinic",
+    "knowledge_base_id": "default",
+    "created_at": "2026-08-19T19:09:12Z",
+    "updated_at": "2026-08-19T19:09:18Z"
+  },
+  "header": {
+    "name": "DEV_REG_CLINIC",
+    "fields": [
+      {
+        "field_id": "fld_b84cb57a5079",
+        "label": "CLINIC_ID",
+        "column": "CLINIC_ID",
+        "required": false
+      },
+      {
+        "field_id": "fld_ae02abf47057",
+        "label": "CLINIC_NAME",
+        "column": "CLINIC_NAME",
+        "required": false
+      },
+      {
+        "field_id": "fld_c58598e59b6e",
+        "label": "CLINIC_STATUS",
+        "column": "CLINIC_STATUS",
+        "required": false
+      }
+    ],
+    "keys": [
+      {
+        "key_id": "key_9952e05fedb5",
+        "label": "PK CLINIC_ID",
+        "field_ids": [
+          "fld_b84cb57a5079"
+        ],
+        "primary": true
+      }
+    ],
+    "evaluation": {
+      "columns": [
+        "CLINIC_ID",
+        "CLINIC_NAME",
+        "CLINIC_STATUS"
+      ],
+      "show_only_evaluated": false
+    }
+  },
+  "minibase": {
+    "dedup": {
+      "key_id": "key_9952e05fedb5",
+      "strategy": "composite_key"
+    },
+    "records": [
+      {
+        "record_id": "rec_185bdc5e7ad1",
+        "key_fingerprint": "6208ef0f7750c111548cf90b6ea1d0d0a66f6bff40dbef07cb45ec436263c7d6",
+        "key_id": "key_9952e05fedb5",
+        "saved_at": "2026-08-19T19:09:18Z",
+        "values": {
+          "fld_b84cb57a5079": "58",
+          "fld_ae02abf47057": "PT & Sports Rehab of the Highland Lakes",
+          "fld_c58598e59b6e": "A"
+        },
+        "source": {
+          "file_name": "dev_rg_emr2_PDE Clinic_20260812_200518.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/PDE TEST/DEV REG EMR/dev_rg_emr2_PDE Clinic_20260812_200518.csv",
+          "row_index": 0
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_302351aad2a0",
+        "key_fingerprint": "4840258dee80439afb272bd30ea9c82de532cb37b1d20c453ab2ad9e4fecc9c6",
+        "key_id": "key_9952e05fedb5",
+        "saved_at": "2026-08-19T19:09:18Z",
+        "values": {
+          "fld_b84cb57a5079": "28224",
+          "fld_ae02abf47057": "Total Sports Therapy - E Bell RD 58",
+          "fld_c58598e59b6e": "A"
+        },
+        "source": {
+          "file_name": "dev_rg_emr2_PDE Clinic_20260812_200518.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/PDE TEST/DEV REG EMR/dev_rg_emr2_PDE Clinic_20260812_200518.csv",
+          "row_index": 1
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_85e4684ee19f",
+        "key_fingerprint": "089dfb073cf5c325e1c38298e4d3892af5b8254455e1e8e336651832f784d1d2",
+        "key_id": "key_9952e05fedb5",
+        "saved_at": "2026-08-19T19:09:18Z",
+        "values": {
+          "fld_b84cb57a5079": "29483",
+          "fld_ae02abf47057": "Robinson Physical Therapy 73rd Ave",
+          "fld_c58598e59b6e": "A"
+        },
+        "source": {
+          "file_name": "dev_rg_emr2_PDE Clinic_20260812_200518.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/PDE TEST/DEV REG EMR/dev_rg_emr2_PDE Clinic_20260812_200518.csv",
+          "row_index": 2
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      },
+      {
+        "record_id": "rec_1d05f1afacfa",
+        "key_fingerprint": "7ff6ddb93f725bb15f2e72f0722a47fc6469b34f86f4408659c5011f7e50a274",
+        "key_id": "key_9952e05fedb5",
+        "saved_at": "2026-08-19T19:09:18Z",
+        "values": {
+          "fld_b84cb57a5079": "30105",
+          "fld_ae02abf47057": "Physical Therapy at ACAC - OT/Speech CLOSED - OLD NPI - 1205809506",
+          "fld_c58598e59b6e": "A"
+        },
+        "source": {
+          "file_name": "dev_rg_emr2_PDE Clinic_20260812_200518.csv",
+          "file_path": "/Users/daniel.gallinate/repositorios/PDE TEST/DEV REG EMR/dev_rg_emr2_PDE Clinic_20260812_200518.csv",
+          "row_index": 3
+        },
+        "validation": {
+          "passed": true,
+          "failed_rule_ids": [],
+          "evaluated_columns": []
+        }
+      }
+    ]
+  }
+}
