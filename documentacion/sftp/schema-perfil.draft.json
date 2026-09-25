@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pde-desktop/profile-sftp",
+  "title": "PDE Desktop — sección SFTP del perfil",
+  "description": "Schema borrador Paso 1. Ajustar en Paso 2 si cambian campos.",
+  "type": "object",
+  "required": ["profile_id", "sftp"],
+  "properties": {
+    "profile_id": {
+      "type": "string",
+      "description": "Identificador lógico; suele coincidir con SFTP user y carpeta config/"
+    },
+    "sftp": {
+      "type": "object",
+      "required": ["host", "port", "user", "private_key_path"],
+      "properties": {
+        "host": {
+          "type": "string",
+          "description": "AWS Transfer Family endpoint"
+        },
+        "port": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 65535,
+          "default": 22
+        },
+        "user": {
+          "type": "string",
+          "description": "Usuario SSH; en nonprod suele igual a profile_id"
+        },
+        "private_key_path": {
+          "type": "string",
+          "description": "Ruta local a llave privada; ~ expandible"
+        },
+        "ssh_keys_dir": {
+          "type": "string",
+          "default": "~/.ssh",
+          "description": "Carpeta para descubrir llaves (S04, S11)"
+        },
+        "default_remote_path": {
+          "type": "string",
+          "description": "Ruta remota inicial, ej. config/Daniel_test_config3/scheduled"
+        },
+        "download_dir": {
+          "type": "string",
+          "default": "./downloads",
+          "description": "Destino por defecto si no hay picker previo"
+        },
+        "connect_timeout_seconds": {
+          "type": "integer",
+          "minimum": 5,
+          "maximum": 120,
+          "default": 30
+        },
+        "preview_max_bytes": {
+          "type": "integer",
+          "default": 524288
+        },
+        "preview_max_lines": {
+          "type": "integer",
+          "default": 500
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}
